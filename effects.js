@@ -5,14 +5,17 @@ document.getElementById("hamMenu").addEventListener("click", function(){
   if(dropNav.style.getPropertyValue("display") == "none"){
     dropNav.style.display = "inline-block";
     hamMenu.style.transform = "rotate(90deg) translateY(20%)";
+    document.getElementsByTagName("body")[0].style.overflowY = "hidden";
   } else {
     dropNav.style.display = "none";
     hamMenu.style.transform = "rotate(0) translateY(20%)";
+    document.getElementsByTagName("body")[0].style.overflowY = "scroll";
   }
   
 });
 
 document.getElementById("closeDropNav").addEventListener("click", function(){
+  document.getElementsByTagName("body")[0].style.overflowY = "scroll";
   const dropNav = document.getElementById("dropNav");
   const hamMenu = document.getElementById("hamMenu");
   dropNav.style.display = "none";

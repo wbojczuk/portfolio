@@ -48,10 +48,9 @@
     }
     .close-drop-nav {
         font-weight: 600;
-        padding-right: 5vh;
         display: block;
         color:#a90000;
-        text-align: right;
+        text-align: center;
         font-size: 15vh;
         text-decoration: none;
         cursor: pointer;
@@ -310,11 +309,12 @@
         text-shadow: 1px 1px 3px #ad3232;
         width: 100%;
         margin: 1vw 0;
+        font-size: 3vh;
     }
     .card-list span {
         opacity: 0; 
         filter: blur(5px);
-        font-size: 3vh;
+        
     }
     .card-underline-anim:before{
         animation: scale_up 1.5s forwards;
