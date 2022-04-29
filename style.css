@@ -526,10 +526,11 @@
     
             .main1 {
                 margin-top: 1%;
-            top: 0;
+            top: -4vh;
             }
             .main2 {
                 margin-top: -2vw;
+                margin-left: -12vh;
             }
             .main-desc {
                 position: relative;
