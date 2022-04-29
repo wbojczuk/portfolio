@@ -1,3 +1,8 @@
+// HIDE SCROLL
+window.addEventListener("load",function(){
+  window.scrollTo(0,1);
+});
+
 // DROPDOWN NAV
 document.getElementById("hamMenu").addEventListener("click", function(){
   const dropNav = document.getElementById("dropNav");
