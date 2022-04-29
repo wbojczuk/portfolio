@@ -46,6 +46,10 @@
     .drop-nav-link:hover {
         background-color: #393939;
     }
+
+    .close-drop-nav:hover {
+        background-color: #393939;
+    }
     .close-drop-nav {
         font-weight: 600;
         display: block;
