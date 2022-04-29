@@ -497,7 +497,7 @@
             .ham-menu{
                 display: none;
             }
-            .card-list span {
+            .card-list {
                 font-size: 2.5vw;
             }
             .link-wrapper {
@@ -535,6 +535,7 @@
                 height: 6vw;
             }
             .section2-content {
+                padding: 1vh;
                 width: 35vw;
             height: 35vw;
             }
