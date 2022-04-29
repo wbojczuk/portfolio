@@ -66,11 +66,14 @@
         background-size: cover;
         width: 6vh;
         height: 6vh;
-        margin-left: 10px;
         position: relative;
         transform: translateY(20%);
         cursor: pointer;
         transition: transform 0.5s ease;
+    }
+    .ham-wrapper {
+        display: inline-block;
+        padding-left: 10px;
     }
 
     .logo {

@@ -9,7 +9,7 @@ document.getElementById("hamMenu").addEventListener("click", function(){
   const hamMenu = document.getElementById("hamMenu");
   if(dropNav.style.getPropertyValue("display") == "none"){
     dropNav.style.display = "inline-block";
-    hamMenu.style.transform = "rotate(90deg) translateY(20%)";
+    hamMenu.style.transform = "rotate(90deg) translateX(20%)";
     document.getElementsByTagName("body")[0].style.overflowY = "hidden";
   } else {
     dropNav.style.display = "none";
