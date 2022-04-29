@@ -283,9 +283,6 @@
         border-radius: 10px;
         box-shadow: 8px 5px 20px black;
         background-color: #05131A;
-    } 
-    .card-list {
-        font-size: 3vh;
     }
     
 
@@ -295,7 +292,7 @@
         font-weight: 600;
         font-family: 'Merienda', cursive;
         font-size: 10vw;
-        width: 50%;
+        width: 75%;
         text-align: center;
 
         transform: scale(-1,-1);
@@ -312,13 +309,14 @@
         background-color: #ad3232;
     }
     .card-list {
+        padding-left: 20px;
         font-family: sans-serif;
         color: #ad3232;
         font-weight: 700;
         text-shadow: 1px 1px 3px #ad3232;
         width: 100%;
         margin: 1vw 0;
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     .card-list span {
         opacity: 0; 
@@ -574,6 +572,7 @@
     
             .card-title { 
                 font-size: 4vw;
+                width: 50%;
             }
             #arrow2 {
             width: 6vw;
