@@ -448,7 +448,7 @@
         width: 15vw;
         height: 15vw;
         position: absolute;
-        bottom:6vw;
+        bottom:5vh;
         background-image: url("img/caret-down.svg");
         background-size: cover;
         background-repeat: no-repeat;
