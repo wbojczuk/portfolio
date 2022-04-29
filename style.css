@@ -445,10 +445,10 @@
     }
 
     #arrow2 {
-        width: 15vw;
-        height: 15vw;
+        width: 20vw;
+        height: 20vw;
         position: absolute;
-        bottom:5vh;
+        bottom:0;
         background-image: url("img/caret-down.svg");
         background-size: cover;
         background-repeat: no-repeat;
