@@ -551,6 +551,7 @@
 
     
             .sec2-cont1-wrapper .mobile-center:nth-child(2) .sec2-cont1 {
+                margin-top: 5vw;
                 margin-left: 10vw;
                 transform: none;
                 position: relative;
