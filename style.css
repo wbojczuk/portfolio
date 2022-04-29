@@ -265,11 +265,12 @@
         height: 100%;
     }
     .sec2-cont1-wrapper .mobile-center:nth-child(1) .sec2-cont1 {
-        margin-top: 20vh;
+        margin-top: 5vh;
         position: absolute;
         transform: translateY(75%);
     }
     .sec2-cont1-wrapper .mobile-center:nth-child(2) .sec2-cont1 {
+        margin-top: -10vh;
         position: absolute;
         transform: translateY(210%);
     }
@@ -447,7 +448,7 @@
         width: 15vw;
         height: 15vw;
         position: absolute;
-        bottom:-3vw;
+        bottom:2vw;
         background-image: url("img/caret-down.svg");
         background-size: cover;
         background-repeat: no-repeat;
