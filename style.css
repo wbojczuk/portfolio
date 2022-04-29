@@ -483,6 +483,9 @@
         justify-content: right;
         padding-right: 5%;
         }
+.card-content{
+    width: 90%;
+}
         .link{
         display: none;
         width: 120px;
@@ -619,13 +622,15 @@
                 display: inline-block;
                 width: 49%;
                 height: 100%;
-                position: absolute;
-                top: -2%;
+                
+                margin-left: 1vw;
+                
             }
             .project-demo2 {
                 display: inline-block;
                 width: 49%;
                 height: 100%;
+                
                
             }
             .project-demo2 .project-window {
