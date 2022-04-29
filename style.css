@@ -278,6 +278,9 @@
         box-shadow: 8px 5px 20px black;
         background-color: #05131A;
     } 
+    .card-list {
+        font-size: 3vh;
+    }
     
 
     .card-title {
