@@ -1,3 +1,24 @@
+// DROPDOWN NAV
+document.getElementById("hamMenu").addEventListener("click", function(){
+  const dropNav = document.getElementById("dropNav");
+  const hamMenu = document.getElementById("hamMenu");
+  if(dropNav.style.getPropertyValue("display") == "none"){
+    dropNav.style.display = "inline-block";
+    hamMenu.style.transform = "rotate(90deg) translateY(20%)";
+  } else {
+    dropNav.style.display = "none";
+    hamMenu.style.transform = "rotate(0) translateY(20%)";
+  }
+  
+});
+
+document.getElementById("closeDropNav").addEventListener("click", function(){
+  const dropNav = document.getElementById("dropNav");
+  const hamMenu = document.getElementById("hamMenu");
+  dropNav.style.display = "none";
+  hamMenu.style.transform = "rotate(0) translateY(20%)";
+});
+
 // FLIP TEXT
 const mainDescription = document.getElementById("mainDescription");
 let once = 1;

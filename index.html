@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <title>William Bojczuk</title>
 <link href="style.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,24 @@
 <script src="syntaxhighlighter.js" defer></script>
 </head>
 <body>
+    <div style="display: none;" class="drop-nav" id="dropNav">
+        <a id="closeDropNav" class="close-drop-nav">&times;</a>
+        <a href="https://williambojczuk.com" class="drop-nav-link"></span>Home</a>
+        <a href="https://williambojczuk.com" class="drop-nav-link"></span>Explore</a>
+        <a href="https://williambojczuk.com" class="drop-nav-link"></span>Projects</a>
+    </div>
 <nav id="mainNav">
+    <div class="loading-bar"></div>
+    <div class="ham-menu" id="hamMenu"></div>
 <div class="logo"><a href="./index.html">William Bojczuk</a></div>
 <div class="link-wrapper">
 <a href="https://williambojczuk.com" class="link"></span>Home</a>
 <a href="https://williambojczuk.com" class="link"></span>Explore</a>
 <a href="https://williambojczuk.com" class="link"></span>Projects</a>
 </div>
-<div class="loading-bar"></div>
+
 </nav>
-<section class="section1">
+<section class="section1" id="mainPage">
     <div class="center" style="height: 80%;">
     <div>
         
@@ -35,9 +44,10 @@
 </section>
 
 <section class="section2" id="moreAbout">
-    <div class="section-wrapper center sec2-cont1-wrapper">
+    <div class="section-wrapper sec2-cont1-wrapper">
  
             <!-- SECTION 2 CARDS -->
+            <div class="mobile-center">
         <div class="section2-content sec2-cont1" >
             <div class="center"><div class="card-title">Skills</div></div>
             <div class="center">
@@ -48,8 +58,10 @@
         </div>
     </div>
         </div>
+    </div>
 
         <!-- CARD 2 -->
+        <div class="mobile-center">
         <div class="section2-content sec2-cont1">
             <div class="center"><div class="card-title">Skills</div></div>
             <div class="center">
@@ -60,16 +72,17 @@
         </div>
     </div>
         </div>
-        <div class="center arrow2-container"><a title="Projects" href="#projects" id="arrow2"></a></div>
     </div>
-    
+        
+    </div>
+    <div class="center"><a title="Projects" href="#projects" id="arrow2"></a></div>
 </section>
-<section id="projects" class="section1 section1-2">
+<section id="projects" class="section1 section1-2" style="position: relative;">
     <div class="section-wrapper section1-wrapper">
-        <div class="project-example-1" id="sec3Test">
+        <div class="project-example-1" >
 
-            <div class="project-text">
-            <div class="center" style="padding-right: 4vw;"><div class="project-title"><div style="overflow: hidden;"><span>Syntax Highlighter</span></div></div></div>
+            <div class="project-text" >
+            <divclass="center" style="padding-right: 4vw;"><div class="project-title"><div style="overflow: hidden;"><span>Syntax Highlighter</span></div></div></divclass=>
             <div class="project-desc"><span>&bull; Highlights the syntax of HTML/CSS code with one class.</span><br>
                 <span>&bull; This script was created with RegEx and is extremely easy to deploy.</span><br>
                 <span>&bull; A more featured demo can be found <a style="color:#05131A" href="http://wbojczuk.github.io/syntaxhighlighter">Here</a>.</span>
@@ -78,7 +91,7 @@
         <div class="project-demo">
             <div class="project-window syntaxCSS" id="testCSS"></div>
         </div>
-
+<div class="testelem" id="sec3Test" ></div>
         </div>
         <div class="project-example-2">
             <div class="project-demo2">
@@ -86,8 +99,8 @@
             </div>
 
             <div class="project-text2">
-                <div class="center" style="padding-left: 4vw;"><div class="project-title"><div style="overflow: hidden;"><span>flurrystorm.js</span></div></div></div>
-                <div class="project-desc" style="padding-left: 4vw;">
+                <div class="center pad4vw" ><div class="project-title"><div style="overflow: hidden;"><span>flurrystorm.js</span></div></div></div>
+                <div class="project-desc pad4vw">
                     <span>&bull; This script generates falling snow particles based on many user settings.</span><br>
                     <span>&bull; The main page of this site uses a modified version of this script to animate the red particles.</span><br>
                     <span>&bull; More details and a demo can be found <a style="color:#05131A" href="http://wbojczuk.github.io/flurrystorm">Here</a>.</span>
@@ -97,6 +110,7 @@
         </div>
 
     </div>
+    <div class="center mainuarrow"><a title="Back To Top" href="#mainPage" id="mainUpArrow"></a></div>
 </section>
 
 <!-- <div class="center"><section class="content-unused">h</section></div> -->
