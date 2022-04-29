@@ -482,6 +482,7 @@
         width: 49%;
         justify-content: right;
         padding-right: 5%;
+        transform: translateY(10%);
         }
 .card-content{
     width: 90%;
@@ -515,7 +516,6 @@
             }
             .link-wrapper {
                 display: inline-flex;
-                transform: translateY(-10%);
             }
             .link {
                 display: inline-block;
@@ -525,7 +525,7 @@
                 width: 40%;
                 margin-left: 2%;
                 font-size: 40px;
-                transform: translateY(0%);
+                transform: translateY(10%);
             }
     
             .main1 {
