@@ -46,28 +46,26 @@
     display: block;
     text-align: left;
     color:#a90000;
-    font-size: 6vh;
+    font-size: 4vh;
     font-family: 'Merienda', cursive;
     text-decoration: none;
     background-color: #05131A;
 }
 
 .drop-nav-link:hover {
-    background-color: #393939;
+    color:#a13b3b;
 }
 
 .close-drop-nav:hover {
-    background-color: #393939;
+    color:#a13b3b;
 }
 .close-drop-nav {
-    position: absolute;
-    bottom:10vh;
-    left:0;
+    padding-left: 2vh;
     font-weight: 600;
     display: block;
     width: 100%;
     color:#a90000;
-    text-align: center;
+    text-align: left;
     font-size: 15vh;
     text-decoration: none;
     cursor: pointer;
