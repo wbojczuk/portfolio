@@ -7,23 +7,46 @@ window.addEventListener("load",function(){
 document.getElementById("hamMenu").addEventListener("click", function(){
   const dropNav = document.getElementById("dropNav");
   const hamMenu = document.getElementById("hamMenu");
+  
   if(dropNav.style.getPropertyValue("display") == "none"){
+    document.getElementById("dropNavWrapper").style.top = "0";
+    document.getElementById("dropNavWrapper").style.transition = "opacity 1s ease-in-out";
+    dropNav.onanimationend = null;
     dropNav.style.display = "inline-block";
+    document.getElementById("dropNavWrapper").style.opacity = "1";
+    dropNav.style.animation = "1s dropnav_down forwards";
     hamMenu.style.transform = "rotate(90deg) translateX(20%)";
-    document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+    
   } else {
-    dropNav.style.display = "none";
+    
     hamMenu.style.transform = "rotate(0) translateY(20%)";
-    document.getElementsByTagName("body")[0].style.overflowY = "scroll";
+    document.getElementById("allContent").style.backgroundColor = "transparent";
+    dropNav.style.animation = "0.5s dropnav_up";
+    document.getElementById("dropNavWrapper").style.transition = "opacity 0.5s ease-in-out";
+    document.getElementById("dropNavWrapper").style.opacity = "0";
+    dropNav.onanimationend = function(){
+      document.getElementById("dropNavWrapper").style.top = "-100vh";
+      document.getElementById("dropNav").style.display = "none";
+    };
+    
+    
   }
   
 });
 
 document.getElementById("closeDropNav").addEventListener("click", function(){
-  document.getElementsByTagName("body")[0].style.overflowY = "scroll";
+  
   const dropNav = document.getElementById("dropNav");
   const hamMenu = document.getElementById("hamMenu");
-  dropNav.style.display = "none";
+  document.getElementById("dropNavWrapper").style.transition = "opacity 0.5s ease-in-out";
+  document.getElementById("dropNavWrapper").style.opacity = "0";
+  dropNav.style.animation = "0.5s dropnav_up";
+  dropNav.onanimationend = function(){
+    document.getElementById("dropNavWrapper").style.top = "-100vh";
+    document.getElementById("allContent").style.backgroundColor = "transparent";
+    
+    document.getElementById("dropNav").style.display = "none";
+  };
   hamMenu.style.transform = "rotate(0) translateY(20%)";
 });
 

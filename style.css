@@ -21,155 +21,7 @@
         align-items: center;
         justify-content: center;
     }
-    .drop-nav {
-        padding-top: 9vh;
-        user-select: none;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background-color: #05131A;
-        top: 0;
-        z-index: 4;
-    }
-    .drop-nav-link {
-        padding: 2vw 0;
-        display: block;
-        border-bottom: 2px solid #95052E;
-        border-top: 2px solid #95052E;
-        text-align: center;
-        color:#a90000;
-        font-size: 8vh;
-        font-family: 'Merienda', cursive;
-        text-decoration: none;
-        background-color: #05131A;
-    }
-    .drop-nav-link:hover {
-        background-color: #393939;
-    }
-
-    .close-drop-nav:hover {
-        background-color: #393939;
-    }
-    .close-drop-nav {
-        font-weight: 600;
-        display: block;
-        color:#a90000;
-        text-align: center;
-        font-size: 20vh;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .ham-menu {
-        display: inline-block;
-        background-image: url("img/ham-menu.svg");
-        background-size: cover;
-        width: 6vh;
-        height: 6vh;
-        position: relative;
-        transform: translateY(20%);
-        cursor: pointer;
-        transition: transform 0.5s ease;
-    }
-    .ham-wrapper {
-        display: inline-block;
-        padding-left: 10px;
-    }
-
-    .logo {
-        position: relative;
-        display: inline-block;
-        margin-left: 5%;
-        width: auto;
-        font-size: 4vh;
-        font-family: monospace;
-        font-weight: 600;
-        transform: translateY(-10%);
-        }
-
-
-
-
-    .link-wrapper a:nth-child(1) {
-        width: 80px;
-    }
     
-    .link:hover {
-    color: white;
-    }
-    .link:after {
-    position: relative;
-    top: 5px;
-    content: "";
-    display: block;
-    width: 0%;
-    height: 4px;
-    background-color: #C70039;
-    transition: 0.4s ease-in-out;
-    border: 0px solid transparent;
-    border-radius: 10%;
-    }
-    .link:hover:after {
-    width: 100%;
-    }
-    
-    .loading-bar {
-    height: 2px;
-    display: inline-block;
-    position: absolute;
-    left:0;
-    margin-top:7vh;
-    box-shadow: 0px 1vh 2px #95052E;
-    animation: loading 1s forwards;
-        
-}
-    
-    @keyframes loading{
-    from{width: 0%;}
-    to{width: 100%;}
-    }
-    
-    
-    
-    
-    .logo a {
-    display: inline-block;
-    color: #C70039;
-    text-decoration: none;
-    transition: 0.4s color ease;
-    }
-    
-    .logo a:after {
-    position: relative;
-    top: 5px;
-    content: "";
-    display: block;
-    transform: scaleX(0);
-    width: 100%;
-    height: 4px;
-    background-color: #C70039;
-    transition: 0.4s transform ease-in-out;
-    border: 0px solid transparent;
-    border-radius: 10%;
-    }
-    
-    .logo a:hover:after {
-    transform: scaleX(1);
-    }
-    
-    .logo a:hover {
-    color:white;
-    }
-    
-    
-    #mainNav {
-        user-select: none;
-    width: 100%;
-    position: fixed;
-    background-color: #05131A;
-    height: 8vh;
-    z-index: 5;
-    }
 
     /* MAIN TITLE */
 
@@ -221,7 +73,7 @@
     .main-desc {
         opacity: 0;
         text-align: center;
-        font-size: 5vw;
+        font-size: 4.1vw;
         font-family: sans-serif;
         font-weight: 700;
         word-spacing: 50%;
@@ -477,28 +329,12 @@
     #moreAbout {
         position: relative;
     }
-    .link-wrapper {
-        display: none;
-        width: 49%;
-        justify-content: right;
-        padding-right: 5%;
-        transform: translateY(10%);
-        }
+    
 .card-content{
     width: 90%;
 }
-        .link{
-        display: none;
-        width: 120px;
-        text-align: center;
-        font-size: 25px;
-        color: #C70039;
-        text-decoration: none;
-        font-family: monospace;
-        margin: 0 10px;
-        transition: color 0.4s ease-in-out;
-        font-weight: 600;
-        }
+
+        
         @media only screen and (min-width: 950px){
             #mainUpArrow {
                 width: 6vw;
@@ -508,26 +344,10 @@
             .pad4vw {
                 padding-left: 4vw;
             }
-            .ham-menu{
-                display: none;
-            }
             .card-list {
                 font-size: 2.5vw;
             }
-            .link-wrapper {
-                display: inline-flex;
-            }
-            .link {
-                display: inline-block;
-                font-size: 1.5vw;
-            }
-            .logo{
-                width: 40%;
-                margin-left: 2%;
-                font-size: 40px;
-                transform: translateY(10%);
-            }
-    
+            
             .main1 {
                 margin-top: 1%;
             top: -4vh;
@@ -561,6 +381,7 @@
                 transform: none;
                 position: relative;
             }
+            
             .sec2-cont1-wrapper .mobile-center:nth-child(1) .sec2-cont1 {
                 margin-top: 5vw;
                 transform: none;
