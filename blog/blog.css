@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+/* CSS RESET */
+* {
+    margin: 0;
+    padding:0;
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: #f6f6f6; min-height: 97vh; overflow-x: hidden; position: relative;
+    }
+    .section-content {
+        padding-top: 8vh;
+    }
+    section {
+        position: relative;
+    }
+
+    /* Main Page */
+    .left-bio {
+        display: none;
+        width: 30%;
+        height: 100vh;
+        background-color: #2e2e2e;
+    }
+
+    .main-pfp {
+        margin-top: 4vh;
+        width: 20vh;
+        height:20vh;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        background: url("img/pfp.JPG");
+        background-size: cover;
+    }
+    .mobile-arrow {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .main-title {
+        font-size: 8vh;
+        font-family: "Merienda",sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin: 2vh 0;
+    }
+
+   .mobile-pfp-card {
+       width: 50vw;
+       margin: 2vh 0;
+   }
+   .card-title {
+       text-align: center;
+   }
+
+   .carousel-controls-left {
+       z-index: 5;
+       font-size: 10vh;
+       position: absolute;
+       left:0;
+       color: #ccc;
+       top:0;
+       transform: translateY(50%);
+   }
+
+   .carousel-controls-right {
+    font-size: 10vh;
+    position: absolute;
+       right:0;
+       z-index: 5;
+       color: #ccc;
+top:0;
+transform: translateY(50%);
+}
