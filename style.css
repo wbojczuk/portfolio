@@ -12,7 +12,7 @@
         justify-content:center ;
     }
     html {scroll-behavior: smooth;}
-    body{ background-color: #05131A; min-height: 97vh; overflow-x: hidden;}
+    body{ background-color: #05131A; min-height: 97vh; overflow-x: hidden; width:100vw;}
 
     /* MOBILE ONLY STUFF */
 
@@ -81,7 +81,7 @@
 
     .cloud1{
         width: 20vw;
-        top:-30px;
+        top:60px;
         transform: translateX(-40vh);
     }
     .cloud2{
@@ -383,6 +383,9 @@
                 width: 6vw;
                 height: 6vw;
                 
+            }
+            .cloud1{
+                top:-30px;
             }
             .pad4vw {
                 padding-left: 4vw;
