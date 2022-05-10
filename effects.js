@@ -1,11 +1,25 @@
-
+setTimeout(function(){dropText(document.getElementById("main2"))}, 500);
+function dropText(elem){
+  let counter = 0;
+  const dropSpans = elem.querySelectorAll("span");
+  const dropLength = dropSpans.length;
+  dropLoop()
+  function dropLoop(){
+    dropSpans[counter].style.animation = "text_down 0.2s forwards";
+    if(counter < dropSpans.length - 1){
+      counter++;
+      setTimeout(dropLoop, 50)
+      
+    }
+  }
+}
 
 // FLIP TEXT
 const mainDescription = document.getElementById("mainDescription");
 let once = 1;
 let oncee = 1;
 let mainDescText = document.getElementById("mainDescription").textContent;
-document.querySelector(".main2 span:nth-child(3)").addEventListener("animationend", function(){
+document.querySelector(".main2 span:nth-child(19)").addEventListener("animationend", function(){
   mainDescription.style.opacity = "1";
   writeText(mainDescription, mainDescText);
 });
@@ -72,6 +86,9 @@ document.addEventListener("scroll", function(){
 
 
 function section2Animations(){
+  document.querySelector(".cloud1").style.animation = "cloud_slide 1s forwards";
+  document.querySelector(".cloud3").style.animation = "cloud_slide 1.1s forwards";
+  document.querySelector(".cloud2").style.animation = "cloud_slide 0.7s forwards";
   let cardTitles = document.querySelectorAll(".card-title");
   for(let i = 0; i < cardTitles.length; i++) {
     flipText(cardTitles[i], cardTitles[i].textContent);

@@ -22,6 +22,7 @@
         justify-content: center;
     }
     
+   
 
     /* MAIN TITLE */
 
@@ -43,9 +44,24 @@
         width: 70vw;
         top: 0;
         font-size: 8vw;
-        animation: textfade 0.5s forwards cubic-bezier(0.011, 0, 0.5, 0);
-        opacity: 0; 
-        filter: blur(5px);
+       
+    }
+    .main1 span{
+        display: inline-block;
+        transform: translateY(-50vh);
+    }
+    .main1 span:nth-child(1){
+        animation: text_down 0.5s forwards;
+    }
+    .main1 span:nth-child(2){
+        animation: text_down 0.5s 0.1s forwards;
+    }
+    .main1 span:nth-child(3){
+        animation: text_down 0.5s 0.2s forwards;
+    }
+    @keyframes text_down{
+        from{transform: translateY(-50vh);}
+    to{transform: translateY(0);}
     }
 
     .main2 {
@@ -53,22 +69,39 @@
         position: relative;
         top: -8vw;
     }
-    .main2 span {
-        opacity: 0;
-        filter: blur(5px);
+    .main2 span{
+        display: inline-block;
+        transform: translateY(-50vh);
     }
 
+    .cloud{
+        position: absolute;
+        
+    }
+
+    .cloud1{
+        width: 20vw;
+        top:-6vh;
+        transform: translateX(-40vh);
+    }
+    .cloud2{
+        width:35vw;
+        right:-10vw;
+        transform: translateX(50vh);
+    }
+    .cloud3{
+        width: 45vw;
+        left: 35vw;
+        bottom:0;
+        transform: translateX(90vh);
+    }
+
+    @keyframes cloud_slide {
+        100%{transform: translateX(0);}
+    }
    
     
-    .main2 span:nth-child(1) {
-        animation: textfade 0.5s 0.2s forwards cubic-bezier(0.011, 0, 0.5, 0);
-    }
-    .main2 span:nth-child(2) {
-        animation: textfade 0.5s 0.4s forwards cubic-bezier(0.011, 0, 0.5, 0);
-    }
-    .main2 span:nth-child(3) {
-        animation: textfade 0.5s 0.6s forwards cubic-bezier(0.011, 0, 0.5, 0);
-    }
+  
 
     .main-desc {
         opacity: 0;
@@ -96,10 +129,20 @@
     .section1 {
         height: 100vh;
         background-color: #05131A;
+        position: relative;
     }
     .section2 {
         height: 100vh;
         background-color: #ad3232;
+        position: relative;
+    }
+
+    .wave{
+        position: absolute;
+       width:100%;
+        opacity: 0.4;
+        left:0;
+        bottom:0;
     }
 
     @keyframes textfade {
@@ -326,7 +369,7 @@
         background-repeat: no-repeat;
         animation: arrow_bounce 3s infinite;
     }
-    #moreAbout {
+    #skills {
         position: relative;
     }
     

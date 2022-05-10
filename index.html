@@ -10,46 +10,51 @@
 <script src="syntaxcode.js" defer></script>
 <script src="particlestorm.js" defer></script>
 <script src="syntaxhighlighter.js" defer></script>
+
 <script src="nav.js" defer></script>
 </head>
 <body>
     <div style="display: none;" class="drop-nav" id="dropNav">
         <a id="closeDropNav" class="close-drop-nav">&times;</a>
-        <a href="./index.html" class="drop-nav-link"></span>Home</a>
-        <a href="#" class="drop-nav-link"></span>Blog</a>
+        <a href="./index.html" class="drop-nav-link" data-feather="home"></span></a>
+        <a> </a>
         <!-- <a href="https://williambojczuk.com" class="drop-nav-link"></span>Projects</a> -->
     </div>
     <div id="dropNavWrapper"></div>
 <nav id="mainNav">
-    <div class="loading-bar"></div>
-    <div class="ham-wrapper">
-    <div class="ham-menu" id="hamMenu"></div>
+    
 </div>
-<div class="nav-logo"><a href="./index.html">William Bojczuk</a></div>
-<div class="nav-link-wrapper">
-<a href="./index.html" class="nav-link"></span>Home</a>
-<a href="#" class="nav-link"></span>Blog</a>
+<div class="link-wrapper">
+    <div>
+<a class="nav-link-a" href="#mainPage"><i data-feather="home" class="nav-link"></i></a>
+<a class="nav-link-a" href="#skills"><i data-feather="command"  class="nav-link"></i></a>
+<a  class="nav-link-a" href="#projects"><i data-feather="monitor" class="nav-link"></i></a>
+</div>
+</div>
 <!-- <a href="./projects.html" class="nav-link"></span>Projects</a> -->
-</div>
 
 </nav>
 <div id="allContent">
 <section class="section1" id="mainPage">
+    <img class="wave" src="./img/wave.svg"/>
     <div class="center" style="height: 80%;">
     <div>
         
-<div class="center"><div class="main-title main1">Hi,</div></div>
+<div class="center"><div class="main-title main1"><span>H</span><span>i</span><span>,</span></div></div>
 <div style=height:100%;>
-<div class="main-title main2"><span>I'm</span><span> William</span> <span>Bojczuk</span></div>
+<div id="main2" class="main-title main2"><span>I</span><span>'</span><span>m</span><span>&nbsp;</span><span>W</span><span>i</span><span>l</span><span>l</span><span>i</span><span>a</span><span>m</span><span>&nbsp;</span><span>B</span><span>o</span><span>j</span><span>c</span><span>z</span><span>u</span><span>k</span></div>
 <div class="main-desc" id="mainDescription">I Specialize in UI/UX and Web-Scripting.</div>
 </div>
 </div>
 </div>
 
-<div class="center maindarrow"><a title="More About Me" href="#moreAbout" id="mainDownArrow"></a></div>
+<div class="center maindarrow"><a title="Skills" href="#skills" id="mainDownArrow"></a></div>
 </section>
 
-<section class="section2" id="moreAbout">
+<section class="section2" id="skills">
+    <img class="cloud cloud1" src="./img/cloud.svg"/>
+    <img class="cloud cloud2" src="./img/cloud.svg"/>
+    <img class="cloud cloud3" src="./img/cloud.svg"/>
     <div class="section-wrapper sec2-cont1-wrapper">
  
             <!-- SECTION 2 CARDS -->
@@ -121,6 +126,8 @@
 </div>
 
 <!-- <div class="center"><section class="content-unused">h</section></div> -->
+<script src="./feather.min.js"></script>
+<script>feather.replace();</script>
 </body>
 
 
