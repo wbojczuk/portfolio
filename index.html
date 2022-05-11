@@ -11,6 +11,7 @@
 <script src="syntaxcode.js" defer></script>
 <script src="particlestorm.js" defer></script>
 <script src="syntaxhighlighter.js" defer></script>
+<script src="./carousel.js" defer></script>
 
 <script src="nav.js" defer></script>
 </head>
@@ -86,38 +87,30 @@
     <div class="center"><a title="Projects" href="#projects" id="arrow2"></a></div>
 </section>
 <section id="projects" class="section1 section1-2" style="position: relative;">
-    <div class="section-wrapper section1-wrapper">
-        <div class="project-example-1" >
-
-            <div class="project-text" >
-            <divclass="center" style="padding-right: 4vw;"><div class="project-title"><div style="overflow: hidden;"><span>Syntax Highlighter</span></div></div></divclass=>
-            <div class="project-desc"><span>&bull; Highlights the syntax of HTML/CSS code with one class.</span><br>
-                <span>&bull; This script was created with RegEx and is extremely easy to deploy.</span><br>
-                <span>&bull; A more featured demo can be found <a style="color:#05131A" href="http://wbojczuk.github.io/syntaxhighlighter">Here</a>.</span>
-            </div>
-        </div>
-        <div class="project-demo">
-            <div class="project-window syntaxCSS" id="testCSS"></div>
-        </div>
-<div class="testelem" id="sec3Test" ></div>
-        </div>
-        <div class="project-example-2">
-            <div class="project-demo2">
-                <div style="margin-left: 2vw; margin-top:1.5vh; padding: 1vw;" class="project-window"></div>
-            </div>
-
-            <div class="project-text2">
-                <div class="center pad4vw" ><div class="project-title"><div style="overflow: hidden;"><span>flurrystorm.js</span></div></div></div>
-                <div class="project-desc pad4vw">
-                    <span>&bull; This script generates falling snow particles based on many user settings.</span><br>
-                    <span>&bull; The main page of this site uses a modified version of this script to animate the red particles.</span><br>
-                    <span>&bull; More details and a demo can be found <a style="color:#05131A" href="http://wbojczuk.github.io/flurrystorm">Here</a>.</span>
-                </div>
-            </div>
-            
-        </div>
-
+    <div class="section-wrapper section12-wrapper">
+        <h1 class="main-project-title">Projects</h1>
+    
+    <div style="transform:translateX(0);" value="0" class="project-container">    
+        <div class="project-frame"></div>
+        <h2 class="project-title">Syntax Highlighter</h2>
     </div>
+    <div style="transform:translateX(300px);" value="300" class="project-container">
+        <div class="project-frame"></div>
+        <h2 class="project-title">Flurrystorm.js</h2>
+    </div>
+    <div style="transform:translateX(600px);" value="600" class="project-container">
+        <div class="project-frame"></div>
+        <h2 class="project-title">RealmShooter</h2>
+    </div>
+    <div style="transform:translateX(900px);" value="900" class="project-container">
+        <div class="project-frame"></div>
+        <h2 class="project-title">This Portfolio</h2>
+    </div>
+
+        <i class="project-left-icon" id="projLeft" data-feather="chevron-left"></i>
+        <i class="project-right-icon" id="projRight" data-feather="chevron-right"></i>
+    </div>
+
     <div class="center mainuarrow"><a title="Back To Top" href="#mainPage" id="mainUpArrow"></a></div>
 </section>
 </div>

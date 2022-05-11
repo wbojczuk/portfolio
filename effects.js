@@ -75,14 +75,14 @@ if(test == true && once == 1){
 
 // THIRD SECTION WAIT
 
-document.addEventListener("scroll", function(){
-  const section3 = document.getElementById("sec3Test");
-  let test = isInViewport(section3);
-  if(test == true && oncee == 1){
-    section3Animations();
-    oncee++
-  }
-  });
+// document.addEventListener("scroll", function(){
+//   const section3 = document.getElementById("sec3Test");
+//   let test = isInViewport(section3);
+//   if(test == true && oncee == 1){
+//     section3Animations();
+//     oncee++
+//   }
+//   });
 
 
 function section2Animations(){
@@ -109,22 +109,22 @@ function section2Animations(){
 
 }
 
-function section3Animations(){
+// function section3Animations(){
 
-  let projectDesc = document.querySelectorAll(".project-desc");
-  for(let i = 0; i < projectDesc.length; i++){
-    projectDesc[i].classList.add("slide-in");
+//   let projectDesc = document.querySelectorAll(".project-desc");
+//   for(let i = 0; i < projectDesc.length; i++){
+//     projectDesc[i].classList.add("slide-in");
     
 
-  }
-  let projectTitle = document.querySelectorAll(".project-title");
-  for(let i = 0; i < projectTitle.length; i++){
-    projectTitle[i].classList.add("project-title-anim");
+//   }
+//   let projectTitle = document.querySelectorAll(".project-title");
+//   for(let i = 0; i < projectTitle.length; i++){
+//     projectTitle[i].classList.add("project-title-anim");
     
 
-  }
+//   }
   
-}
+// }
 
 // VIEWPORT CHECKS
 function isInViewport(elem) {

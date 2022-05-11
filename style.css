@@ -231,111 +231,6 @@
     
     
 
-    
-
-    .project-example-1 {
-        position: absolute;
-        transform: translateY(60%);
-        width: 100%;
-        height: 30%;
-        background-color: #ad3232;
-
-    }
-    .project-example-2 {
-        position: absolute;
-        transform: translateY(180%);
-        width: 100%;
-        height: 30%;
-        background-color: #ad3232;
-        right:0;
-    }
-    .project-text{
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-    .project-demo {
-        display: none;
-        width: 49%;
-        height: 100%;
-        position: absolute;
-        
-    }
-    .project-demo2 {
-        display: none;
-        width: 49%;
-        height: 100%;
-       
-    }
-    .project-demo2 .project-window {
-        background-image: url("img/flurystorm.png");
-        background-position: center;
-        background-size: cover;
-    }
-    .project-text2{
-        display: inline-block;
-        
-        width: 100%;
-        height: 100%;
-    }
-
-    .project-desc span{
-        opacity: 0;
-    }
-    .project-title {
-        position: relative;
-        color: #05131A;
-        font-size: 4vh;
-        font-family:'Merienda', cursive;
-        font-weight: 600;
-        width: 100vw;
-        display: inline-block;
-        text-align: center;
-        
-    }
-    .project-title div span {
-        position: relative;
-        top: -50vw;
-            }
-    .project-title-anim div span {
-        animation: plop_in 2s forwards;
-    }
-    .project-title:after {
-        position: absolute;
-        bottom: -3px;
-        content: "";
-        display: inline-block;
-        width: 100%;
-        height: 3px;
-        left: 0;
-        background-color: #05131A;
-    }
-
-
-    .project-desc {
-        margin-left: 2vw;
-        margin-top: 2vw;
-        color: #05131A;
-        font-size: 2vh;
-        font-family:sans-serif;
-        font-weight: 700;
-        display: inline-block;
-    }
-    .project-window {
-        width: 90%;
-        height: 80%;
-        background-color: #05131A;
-        margin-top: 1.5vh;
-        border: 0px solid transparent;
-        border-radius: 10px;
-        box-shadow: 8px 5px 20px black;
-    }
-    .syntaxCSS {
-        font-size: 80%;
-        padding: 1vw;
-        word-wrap: break-word;
-    }
-
     .slide-in span {
         animation: slide_in 2s forwards;
     }
@@ -377,8 +272,87 @@
     width: 90%;
 }
 
+
+
+
+.section12-wrapper{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.project-left-icon{
+    display: inline-block;
+    color: #C70039;
+    width: 100px;
+    height:100px;
+    left: -15px;
+    background-size: contain;
+    position: absolute;
+    transform: translateY(-25%);
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+}
+
+.project-container{
+    display: inline-block;
+    width: 40vh;
+    height: 50vh;
+    margin-left:10vw;
+    position: absolute;
+    transition: left 1s ease;
+}
+
+.project-frame{
+    height:80%;
+    width:100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./img/frame.svg');
+    
+}
+
+.project-title{
+    text-align: center;
+    font-family:"Merienda", cursive;
+    width: 100%;
+    color: #ad3232;
+    font-size: 1.6em;
+    margin-top: 5vh;
+}
+
+.project-right-icon{
+    display: inline-block;
+    position: absolute;
+    color: #C70039;
+    width: 100px;
+    height:100px;
+    right: 0;
+    background-size: contain;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-25%);
+    z-index: 2;
+}
+.main-project-title{
+    text-align: center;
+    color:#ad3232;
+    position: absolute;
+transform: translateY(-35vh);
+    width: 100vw;
+    left:0;
+    font-family:"Merienda", cursive;
+    font-size: 6vw;
+    
+}
         
         @media only screen and (min-width: 950px){
+            
+            .project-left-icon{
+                left: 5vw;
+            }
             #mainUpArrow {
                 width: 6vw;
                 height: 6vw;
@@ -462,113 +436,6 @@
                 100%{font-size: 3vw;top: 0;}
             }
             
-            .project-example-1 {
-                position: absolute;
-                margin-top: 6%;
-                width: 75%;
-                height: 35%;
-                background-color: #ad3232;
-                transform: translateY(0);
-        
-            }
-            .project-example-2 {
-                position: absolute;
-                margin-top: 50vh;
-                width: 75vw;
-                height: 35vh;
-                background-color: #ad3232;
-                right:0;
-                transform: translateY(0);
-            }
-            .project-text{
-                display: inline-block;
-                width: 49%;
-                height: 100%;
-            }
-            .project-demo {
-                display: inline-block;
-                width: 49%;
-                height: 100%;
-                
-                margin-left: 1vw;
-                
-            }
-            .project-demo2 {
-                display: inline-block;
-                width: 49%;
-                height: 100%;
-                
-               
-            }
-            .project-demo2 .project-window {
-                background-image: url("img/flurystorm.png");
-                background-position: center;
-                background-size: cover;
-            }
-            .project-text2{
-                display: inline-block;
-                position: absolute;
-                width: 49%;
-                height: 100%;
-                top:0;
-            }
-        
-            .project-desc span{
-                opacity: 0;
-            }
-            .project-title {
-                margin-left: 2vw;
-                position: relative;
-                color: #05131A;
-                font-size: 3vw;
-                width: 100%;
-                font-family:'Merienda', cursive;
-                font-weight: 600;
-                display: inline-block;
-                text-align: center;
-                
-            }
-            .project-title div span {
-                position: relative;
-                top: -10vw;
-                    }
-            .project-title-anim div span {
-                animation: plop_in 2s forwards;
-            }
-            .project-title:after {
-                position: absolute;
-                bottom: -3px;
-                content: "";
-                display: inline-block;
-                width: 100%;
-                height: 3px;
-                left: 0;
-                background-color: #05131A;
-            }
-        
-        
-            .project-desc {
-                margin-left: 2vw;
-                margin-top: 2vw;
-                color: #05131A;
-                font-size: 1.3vw;
-                font-family:sans-serif;
-                font-weight: 700;
-                display: inline-block;
-            }
-            .project-window {
-                width: 90%;
-                height: 80%;
-                background-color: #05131A;
-                margin-top: 1.5vh;
-                border: 0px solid transparent;
-                border-radius: 10px;
-                box-shadow: 8px 5px 20px black;
-            }
-            .syntaxCSS {
-                font-size: 80%;
-                padding: 1vw;
-                word-wrap: break-word;
-            }
+            
         }
     
