@@ -299,7 +299,7 @@
     display: inline-block;
     width: 40vh;
     height: 50vh;
-    margin-left:10vw;
+    left:10vh;
     position: absolute;
     transition: left 1s ease;
 }
@@ -347,11 +347,17 @@ transform: translateY(-35vh);
     font-size: 6vw;
     
 }
+#allContent{
+    overflow-x: hidden;
+}
         
         @media only screen and (min-width: 950px){
             
             .project-left-icon{
                 left: 5vw;
+            }
+            .project-right-icon{
+                right: 5vw;
             }
             #mainUpArrow {
                 width: 6vw;
