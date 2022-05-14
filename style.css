@@ -304,15 +304,61 @@
     transition: left 1s ease;
 }
 
-.project-frame{
+.realmshooter-frame{
+    display: block;
     height:80%;
     width:100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('./img/frame.svg');
+    background-image: url('./img/realmshooter.jpg');
+    position: relative;
+    z-index: 2;
     
 }
+.syntax-frame{
+    display: block;
+    height:80%;
+    width:100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./img/syntax.jpg');
+    position: relative;
+    z-index: 2;
+    
+}
+.flurry-frame{
+    display: block;
+    height:80%;
+    width:100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./img/flurrystorm.jpg');
+    position: relative;
+    z-index: 2;
+    
+}
+.portfolio-frame{
+    display: block;
+    height:80%;
+    width:100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./img/portfolio.jpg');
+    position: relative;
+    z-index: 2;
+    
+}
+.photo-frameee{
+    transition: 0.5s transform ease-in-out;
+}
+.photo-frameee:hover{
+    transform: scale(1.1);
+}
+
 
 .project-title{
     text-align: center;
