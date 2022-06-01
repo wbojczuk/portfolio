@@ -1,3 +1,4 @@
+let particleState = 0;
 setTimeout(function(){dropText(document.getElementById("main2"))}, 500);
 function dropText(elem){
   let counter = 0;
@@ -66,6 +67,19 @@ function writeText(elem, text) {
 
 document.addEventListener("scroll", function(){
 const section2Cards = document.getElementById("sect2test");
+
+let testTwo = isInViewport(document.getElementById("mainDownArrow"))
+
+if(testTwo!==true&&particleState==0){
+  particleState=1;
+  flurryStorm.pause();
+}
+
+if(testTwo==true&&particleState==1){
+  particleState=0;
+  flurryStorm.resume();
+}
+
 let test = isInViewport(section2Cards);
 if(test == true && once == 1){
   section2Animations();
