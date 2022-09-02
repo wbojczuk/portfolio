@@ -82,18 +82,18 @@
     .cloud1{
         width: 20vw;
         top:60px;
-        transform: translateX(-40vh);
+        
     }
     .cloud2{
         width:35vw;
         right:-10vw;
-        transform: translateX(50vh);
+        
     }
     .cloud3{
         width: 45vw;
         left: 35vw;
         bottom:0;
-        transform: translateX(90vh);
+       
     }
 
     @keyframes cloud_slide {
