@@ -100,9 +100,9 @@ if(test == true && once == 1){
 
 
 function section2Animations(){
-  document.querySelector(".cloud1").style.animation = "cloud_slide 1s forwards";
-  document.querySelector(".cloud3").style.animation = "cloud_slide 1.1s forwards";
-  document.querySelector(".cloud2").style.animation = "cloud_slide 0.7s forwards";
+  //document.querySelector(".cloud1").style.animation = "cloud_slide 1s forwards";
+  //document.querySelector(".cloud3").style.animation = "cloud_slide 1.1s forwards";
+//document.querySelector(".cloud2").style.animation = "cloud_slide 0.7s forwards";
   let cardTitles = document.querySelectorAll(".card-title");
   for(let i = 0; i < cardTitles.length; i++) {
     flipText(cardTitles[i], cardTitles[i].textContent);
