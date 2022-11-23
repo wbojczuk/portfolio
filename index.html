@@ -1,127 +1,160 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Bojczuk</title>
-<link href="style.css" rel="stylesheet">
-<link rel="stylesheet" href="nav_dark.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="particlestorm.js" defer></script>
-<script src="effects.js" defer></script>
-<script src="syntaxcode.js" defer></script>
-
-<script src="syntaxhighlighter.js" defer></script>
-<script src="./carousel.js" defer></script>
-
-<script src="nav.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main_section.css">
+    <link rel="stylesheet" href="./css/birds.css">
+    <link rel="stylesheet" href="./css/about_section.css">
+    <link rel="stylesheet" href="./css/hangingelems.css">
+    <link rel="stylesheet" href="./css/project_section.css">
+    <link rel="stylesheet" href="./css/weather.css">
+    <script src="./js/jsdev.js"></script>
+    <script src="./js/birds.js" defer></script>
+    <script src="./js/textstorm.js" defer></script>
+    <script src="./js/asfade.js" defer></script>
+    <script src="./js/datetopbar.js" defer></script>
+    <script src="./js/hangingelems.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+    <script src="./js/stats.js" defer></script>
+    <script src="js/weather.js" defer></script>
 </head>
 <body>
-    <img value="0" src="./img/ham-menu.svg" id="hamMenu"/>
     
-    <div id="dropNavWrapper"></div>
-<nav id="mainNav">
-    
-</div>
-<div class="link-wrapper">
-    <div>
-<a class="nav-link-a" href="#mainPage"><i data-feather="home" class="nav-link"></i></a>
-<a class="nav-link-a" href="#skills"><i data-feather="command"  class="nav-link"></i></a>
-<a  class="nav-link-a" href="#projects"><i data-feather="monitor" class="nav-link"></i></a>
-</div>
-</div>
-<!-- <a href="./projects.html" class="nav-link"></span>Projects</a> -->
+    <section id="mainSection">
+        <div class="bird"></div>
+        <div class="bird"></div>
+        <div class="bird"></div>
+        <div class="bird"></div>
+        <div id="dateTopBar"></div>
+        <!-- TEXT -->
+        <div id="introText">
+            <div class="as-write intro1" data-delay="500" data-width="6px" data-height="80%" data-offsetv="10%">Hi,</div><br>
+            <!-- <div class="as-write intro2" data-wait="1500" data-delay="500" data-width="4px" data-height="80%" data-offsetv="10%">I'm William Bojczuk</div> -->
+            <div class="as-mulwrite intro2" data-wait="1500" data-delay="500" data-width="4px" data-height="90%" data-offsetv="20px"  data-offseth="-5px">
+                <span class="as-mulwrite-text">I'm William Bojczuk</span>
+                <span class="as-mulwrite-text">I love coding.</span>
+            </div>
+        </div>
 
-</nav>
-<div id="allContent">
-<section class="section1" id="mainPage">
-    <img class="wave" src="./img/wave.svg"/>
-    <div class="center" style="height: 80%;">
-    <div>
+        <!-- MAIN MENU -->
+        <div id="mainMenu" >
+            <a href="https://github.com/wbojczuk" target="_blank" class="main-icon">
+                <img src="./img/github_icon.svg">
+            </a><br>
+            <a style="left: 45%;" href="mailto:williambojczuk@gmail.com" class="main-icon">
+                <img src="./img/mail_icon.svg">
+            </a>
+        </div>
+
+        <div id="weatherTemp" data-weatherval="">
+            <span>--</span>
+        </div>
+        <div id="weatherType"></div>
+
+        <div id="weatherLocation">
+        <div class="loc-wrapper">
+        </div>
+        </div>
+        <div id="weatherUnits">
+            <select name="weatherunits" id="weatherUnitsSelect">
+                <option id="weatherUnitF" value="f">Fahrenheit</option>
+                <option id="weatherUnitC" value="c" selected>Celcius</option>
+            </select>
+        </div>
+        <div id="extraFish"></div>
+        <div id="refreshLoc">
+            <button>Refresh Location</button>
+        </div>
+        <!-- Bottom Wave BG -->
+        <div class="main-wave" id="mainWave">
+        </div>
+        <!-- DOWN ARROW -->
+        <a href="#aboutSection" class="down-arrow" id="mainDownArrow" title="About Me"></a>
+    </section>
+
+    <section id="aboutSection">
         
-<div class="center"><div class="main-title main1"><span>H</span><span>i</span><span>,</span></div></div>
-<div style=height:100%;>
-<div id="main2" class="main-title main2"><span>I</span><span>'</span><span>m</span><span>&nbsp;</span><span>W</span><span>i</span><span>l</span><span>l</span><span>i</span><span>a</span><span>m</span><span>&nbsp;</span><span>B</span><span>o</span><span>j</span><span>c</span><span>z</span><span>u</span><span>k</span></div>
-<div class="main-desc" id="mainDescription">I Specialize in UI/UX and Web-Scripting.</div>
-</div>
-</div>
-</div>
-
-<div class="center maindarrow"><a title="Skills" href="#skills" id="mainDownArrow"></a></div>
-</section>
-
-<section class="section2" id="skills">
-    <img class="cloud cloud1" src="./img/cloud.svg"/>
-    <img class="cloud cloud2" src="./img/cloud.svg"/>
-    <img class="cloud cloud3" src="./img/cloud.svg"/>
-    <div class="section-wrapper sec2-cont1-wrapper">
- 
-            <!-- SECTION 2 CARDS -->
-            <div class="mobile-center">
-        <div class="section2-content sec2-cont1" >
-            <div class="center"><div class="card-title">Skills</div></div>
-            <div class="center">
-            <div class="card-content">
-            <div class="card-list">&bull; <span>Fluent</span><span> In</span><span> JavaScript/ES6</span></div>
-                <div class="card-list">&bull; <span>Fluent</span><span> In</span><span> PHP</span></div>
-                <div class="card-list">&bull; <span>Fluent</span><span> In</span><span> Java</span></div>
-                <div class="card-list">&bull; <span>Fluent</span><span> In</span><span> CSS</span></div>
-           <div id="sect2test" class="card-list">&bull; <span>Photo</span><span> Manipulation</span></div>
+        <div id="timesVisited">
+            <div>You've visited this page <span>1</span> time!</div>
         </div>
-    </div>
+
+        <span id="aboutWrapper">
+            <div id="aboutContainer">
+                <div id="aboutText">
+                    My name is William Bojczuk.<br>I am a 20 year old developer based out of the USA. I am currently finishing my associates degree of applied science in Web Design/Dev through GNTC. I love coding and any code used on this page has been developed by me.
+                </div>
+            </div>
+        </span>
+
+        <div id="stackWrapper">
+            <div id="stackContainer">
+                <div id="hangingElemContainer">
+                    <div class="hanging-elem" style="margin-left: 15%;">
+                        <img src="./img/icons/html_icon.svg" class="stack-icon">
+                    </div>
+                    <div class="hanging-elem" style="margin-left: 25%;">
+                        <img src="./img/icons/css_icon.svg" class="stack-icon">
+                    </div>
+                    <div class="hanging-elem" style="margin-left: 35%;">
+                        <img style="height: 2.5vw; width: 2.5vw;" src="./img/icons/js_icon.svg" class="stack-icon">
+                    </div>
+                    <div class="hanging-elem" style="margin-left: 45%;">
+                        <img src="./img/icons/php_icon.svg" class="stack-icon">
+                    </div>
+                    <div class="hanging-elem" style="margin-left: 55%; height: 1.2vw;">
+                        <img src="./img/icons/java_icon.svg" class="stack-icon">
+                    </div>
+                    <div class="hanging-elem" style="margin-left: 65%;">
+                        <img src="./img/icons/gimp_icon.svg" class="stack-icon">
+                    </div>
+                    <div class="hanging-elem" style="margin-left: 75%; height: 2.5vw;">
+                        <img src="./img/icons/ps_icon.svg" class="stack-icon">
+                    </div>
+                    <div class="hanging-elem" style="margin-left: 85%; height: 0.5vw;">
+                        <img src="./img/icons/vscode_icon.svg" class="stack-icon">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <!-- Bottom Wave BG -->
+        <div id="aboutWave"></div>
+         <!-- DOWN ARROW -->
+         <a href="#projectSection" class="down-arrow" id="aboutDownArrow" title="About Me"></a>
+    </section>
 
-        <!-- CARD 2 -->
-        <div class="mobile-center">
-        <div class="section2-content sec2-cont1">
-            <div class="center"><div class="card-title">Skills</div></div>
-            <div class="center">
-            <div class="card-content">
-           <div class="card-list">&bull; <span>I</span> <span>Design</span><span> UI/UX</span></div>
-           <div class="card-list">&bull; <span>I </span><span>Can</span><span> Work</span><span> With</span><span> Git</span></div>
-           <div class="card-list">&bull; <span>I</span><span> Write</span><span> Custom</span><span> CSS/JS</span><span> Animations</span></div>
+    <section id="projectSection">
+        <div class="project-title"><span data-initialstate="true" id="projectTitle">Projects</span></div>
+
+        <div class="space-between-60">
+            <div id="triCarousel"></div>
+
+            <div id="projectAbout">
+                <div id="projectAboutTitle">JsDevTools</div>
+                <div id="projectAboutText">So yes</div>
+                <a href="#" target="_blank" id="projectAboutDemo">D<br>E<br>M<br>O</a>
+            </div>
+
         </div>
-    </div>
+        <div id="carouselStyleSwitch">
+            <div class="hover-effect-title">Hover Effect</div>
+                <div class="hover-effect-container">
+                    <input class="effect-options" checked="checked" value="slide-down" type="radio" name="hovereffect" id="slideDown"> <label for="slideDown">slide-down</label>
+                </div>
+                <div class="hover-effect-container">
+                    <input class="effect-options" value="slide-up" type="radio" name="hovereffect" id="slideUp"> <label for="slideUp">slide-up</label>
+                </div>
+                <div class="hover-effect-container">
+                    <input class="effect-options" value="peek" type="radio" name="hovereffect" id="peek"> <label for="peek">peek</label>
+                </div>
+                <div class="hover-effect-container">
+                    <input class="effect-options" value="none" type="radio" name="hovereffect" id="noneEffect"> <label for="noneEffect">none</label>
+                </div>
         </div>
-    </div>
-        
-    </div>
-    <div class="center"><a title="Projects" href="#projects" id="arrow2"></a></div>
-</section>
-<section id="projects" class="section1 section1-2" style="position: relative;">
-    <div class="section-wrapper section12-wrapper">
-        <h1 class="main-project-title">Projects</h1>
-    
-    <div style="transform:translateX(0);" value="0" class="project-container">    
-        <a href="http://wbojczuk.github.io/syntaxhighlighter" target="_blank" class="syntax-frame photo-frameee"></a>
-        <h2 class="project-title">Syntax Highlighter</h2>
-    </div>
-    <div style="transform:translateX(30vw);" value="30" class="project-container">
-        <a href="http://wbojczuk.github.io/flurrystorm" target="_blank" class="flurry-frame photo-frameee"></a>
-        <h2 class="project-title">Flurrystorm.js</h2>
-    </div>
-    <div style="transform:translateX(60vw);" value="60" class="project-container">
-        <a href="http://wbojczuk.github.io" target="_blank" class="realmshooter-frame photo-frameee"></a>
-        <h2 class="project-title">RealmShooter</h2>
-    </div>
-    <div style="transform:translateX(90vw);" value="90" class="project-container">
-        <a href="https://wbojczuk.github.io/snakesandladders" target="_blank" class="portfolio-frame photo-frameee"></a>
-        <h2 class="project-title">Math Snakes and Ladders</h2>
-    </div>
-
-        <i class="project-left-icon" id="projLeft" data-feather="chevron-left"></i>
-        <i class="project-right-icon" id="projRight" data-feather="chevron-right"></i>
-    </div>
-
-    <div class="center mainuarrow"><a title="Back To Top" href="#mainPage" id="mainUpArrow"></a></div>
-</section>
-</div>
-
-<!-- <div class="center"><section class="content-unused">h</section></div> -->
-<script src="./feather.min.js"></script>
-<script>feather.replace();</script>
+        <a href="#mainSection" class="down-arrow" id="mainUpArrow" title="Back To Top"></a>
+    </section>
 </body>
-
-
 </html>

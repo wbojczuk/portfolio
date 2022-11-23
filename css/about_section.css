@@ -1,0 +1,145 @@
+#aboutSection{
+    height: 100vh;
+    background-color: #012355;
+    width: 100vw;
+    position: relative;
+    z-index: 900;
+}
+
+#aboutWrapper{
+    display: inline-block;
+    position: relative;
+    margin-left: 10vw;
+    margin-top: 10vw;
+}
+
+#aboutContainer{
+    display: inline-block;
+    position: relative;
+    width: 35vw;
+    height: 20vw;
+    background-color: rgb(131, 182, 240);
+}
+
+#aboutContainer:before{
+    content: 'About Me';
+    display: inline-block;
+    position: absolute;
+    font-family: 'Space Mono', sans-serif;
+    top:0;
+    transform: translateY(-50%);
+    background-color: #0e141d;
+    color: rgb(212, 232, 255);
+    left: 2vw;
+    padding: 0 1vw;
+    font-size: 2vw;
+}
+
+#aboutContainer:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:0.6vw;
+    left:0.6vw;
+    width: 100%;
+    height: 100%;
+    background-color: #0e141d;
+    z-index: -1;
+}
+#aboutText{
+    display: inline-block;
+    padding-top: 1vw;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5vw;
+}
+
+#stackWrapper{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: -11vw;
+    margin-right: 10vw;
+}
+
+#stackContainer{
+    display: inline-block;
+    position: relative;
+    width: 35vw;
+    height: 20vw;
+    border: 1vw solid rgb(131, 182, 240);
+}
+
+#stackContainer:before{
+    content: 'My Stack';
+    display: inline-block;
+    position: absolute;
+    font-family: 'Space Mono', sans-serif;
+    top:-1vw;
+    background-color: #0e141d;
+    color: rgb(212, 232, 255);
+    right:-4vw;
+    transform: rotate(20deg);
+    font-size: 2vw;
+    padding: 0.2vw 1vw;
+}
+.hanging-elem{
+    width: 1px;
+    height: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.stack-icon{
+    display: inline-block;
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    z-index: 10;
+}
+
+#timesVisited{
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    top:4vw;
+    right: 10vw;
+    width: 30vw;
+    height: 6vw;
+    background-color: rgb(18, 29, 44);
+    border: 0px solid transparent;
+    border-radius: 40px;
+    padding-left: 4vw;
+    color: rgb(203, 234, 255);
+    font-family: 'Space Mono', sans-serif;
+    font-size: 1.2vw;
+}
+#timesVisited div span{
+    display: inline-flex;
+    width: 3vw;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(25, 212, 25);
+    color: rgb(207, 255, 203);
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 8px rgb(51, 216, 17));
+}
+
+#aboutDownArrow{
+    background-image: url('../img/caret_down.svg');
+}
+#aboutWave{
+    position: absolute;
+    width: 100%;
+    height: 28%;
+    bottom:-14%;
+    left:0;
+    background-image: url("../img/about_wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -85;
+}

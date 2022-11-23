@@ -1,0 +1,128 @@
+
+#projectSection{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #368cc2;
+    z-index: 5;
+    overflow: hidden;
+}
+#projectTitle{
+    position: relative;
+    opacity: 0;
+}
+.project-title{
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: "Space Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+#triCarousel{
+    margin-left: 15vw;
+   top: 3vw;
+}
+
+#carouselStyleSwitch{
+    width: 7%;
+    height: 20%;
+    background-color: #347aa5;
+    position: absolute;
+    left:5%;
+    top: 17%;
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 1vw;
+    border: 2px solid #125178;
+    border-radius: 5px;
+}
+.hover-effect-title{
+    text-align: center;
+    border-bottom: 2px solid #125178;
+}
+.hover-effect-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0.5vw 2px;
+    
+}
+.hover-effect-container input{
+    display: inline-block;
+    margin-right: 0.1vw;
+    cursor: pointer;
+    appearance: none;
+    border: 2px solid black;
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.hover-effect-container input:checked{
+    background-color: #0a47a3;
+}
+.hover-effect-container label{
+    display: inline-block;
+    cursor: pointer;
+}
+
+#projectAbout{
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+    width: 25vw;
+    margin-right: 2vw;
+    background-color: #347aa5;
+    height: 35vw;
+    border: 2px solid #125178;
+    border-radius: 5px;
+    color: #000;
+}
+#projectAboutTitle{
+    
+    font-size: 2.5vw;
+    font-weight: 400;
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1vw;
+    text-align: center;
+    border-bottom: 2px solid #125178;
+}
+#projectAboutText{
+    margin-top: 2vw;
+    display: inline-block;
+    width: 90%;
+    max-height: 80%;
+    margin-left: 5%;
+    font-family: serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+    overflow-y: auto;
+}
+#projectAboutDemo{
+    display: inline-block;
+    position: absolute;
+    top:0.5vw;
+    left:-3vw;
+    width: 3vw;
+    padding: 1vw 0;
+    text-align: center;
+    background-color: rgb(7, 38, 97);
+    color: #000;
+    text-decoration: none;
+    font-family: "Space Mono", monospace;
+    line-height: 1.2em;
+    font-size: 2vw;
+    border: 0px solid transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#projectAboutDemo:hover{
+    background-color: rgb(12, 61, 153);
+}

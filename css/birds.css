@@ -1,0 +1,12 @@
+.bird{
+    z-index: 999;
+    position: absolute;
+    width: 5%;
+    aspect-ratio: 2/3;
+    left:0;
+    top:100%;
+    background: url('../img/crow.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}

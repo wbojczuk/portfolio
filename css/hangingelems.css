@@ -1,0 +1,19 @@
+#hangingElemContainer{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hanging-elem{
+    position: absolute;
+}
+
+.hanging-elem-wire{
+    display: inline-block;
+    width: 2px;
+    background-color: #ccc;
+    position: absolute;
+    left: calc(50% - 1px);
+    z-index: -10;
+}
