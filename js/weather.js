@@ -1,7 +1,9 @@
 let wUnits = weatherUnits.dataset.weatherunits;
 let userLatLong = [];
 const fetchState = {
-    weather: false
+    weather: false,
+    geoData: false,
+    searchTimer: null,
 }
 const weatherCodes = {
     clear: [0],
@@ -42,7 +44,22 @@ function getCoords(type){
                 updateSettings();
                 displayLocationName("default")});
   }
-}
+}else if(type == "default"){
+        getWeatherData(-27.713843, 29.997177);
+        userLatLong = [-27.713843, 29.997177];
+        settings[2] = -27.713843;
+        settings[3] = 29.997177;
+        updateSettings();
+        displayLocationName("default");
+}else{
+    
+    getWeatherData(type.latitude, type.longitude);
+    userLatLong = [type.latitude, type.longitude];
+    settings[2] = type.latitude;
+    settings[3] = type.longitude;
+    updateSettings();
+    displayLocationName({city: type.city, country: type.country});
+  }
 }
 function getWeatherData(lat, long){
     // Fetch Weather Data Via open-meteo API
@@ -59,7 +76,7 @@ function showWeatherData(weather){
     let weatherTemp = weather.current_weather.temperature;
     const tempElem = document.getElementById("weatherTemp");
     tempElem.setAttribute("data-weatherval", weatherTemp);
-    if(wUnits == "f"){
+    if(settings[1] == "f"){
         weatherTemp = toFahrenheit(weatherTemp);
     }
     tempElem.innerHTML = `<span>${(weatherTemp).toFixed(0)}</span>`;  
@@ -127,7 +144,7 @@ function displayLocationName(loc){
         if(settings[5] != false){
             country = settings[5];
         }
-    }else{
+    }else if(loc.thanks){
         // If Not in LocalStorage and user allowed location
          if(loc.results[0].components.country){
             country = loc.results[0].components.country;
@@ -142,6 +159,12 @@ function displayLocationName(loc){
             settings[4] = false;
          }
          updateSettings();
+    }else{
+        city = loc.city;
+         country = loc.country;
+         settings[5] = loc.country;
+         settings[4] = loc.city;
+         updateSettings();
     }
 
     const locElem = document.getElementById("weatherLocation");
@@ -152,7 +175,7 @@ function displayLocationName(loc){
 if(settings[3] != false){
     getCoords("saved");
 }else{
-    getCoords("getloc");
+    getCoords("default");
 }
 // Promt User for new location
 document.querySelector("#refreshLoc button").addEventListener("click", ()=>{getCoords("getloc")});
@@ -163,3 +186,116 @@ setInterval(
     getWeatherData(userLatLong[0], userLatLong[1]);
 }
 ,60000);
+
+// Search by geographic data
+const searchLocInput = document.getElementById("searchLocInput");
+const searchLocButton = document.querySelector("#searchLoc button");
+
+const searchLocList = {
+    elem: document.querySelector("#searchLoc ul"),
+
+    isOpen: false,
+    clicked: false,
+
+    open: ()=>{
+        searchLocList.elem.style.display = "inline-block";
+        searchLocList.isOpen = true;
+    },
+    close: ()=>{
+        searchLocList.elem.style.display = "none";
+        searchLocList.elem.innerHTML = "";
+        searchLocInput.value = "";
+        searchLocList.isOpen = false;
+    }
+};
+
+searchLocList.elem.addEventListener("click", ()=>{
+    searchLocList.clicked = true;
+});
+window.addEventListener("click", ()=>{
+    if(!searchLocList.clicked && searchLocList.isOpen){
+        searchLocList.close();
+        console.log("hey")
+    }
+});
+
+
+searchLocButton.addEventListener("click", ()=>{
+    getGeoData(searchLocInput.value);
+});
+
+searchLocInput.addEventListener("input", ()=>{
+    
+    if(searchLocInput.value == ""){
+        clearTimeout(fetchState.searchTimer);
+        searchLocList.close();
+    }else{
+        getGeoData(searchLocInput.value);
+         // FORCE REFRESH 1 SECOND AFTER LAST KEYPRESS
+        clearTimeout(fetchState.searchTimer);
+        fetchState.searchTimer = setTimeout(()=>{
+            fetchState.geoData = false;
+            getGeoData(searchLocInput.value);
+        },1000);
+    }
+   
+});
+
+
+searchLocInput.addEventListener("keypress", (evt)=>{
+    if(evt.key == "Enter"){
+        getGeoData(searchLocInput.value); 
+    }
+});
+
+
+
+
+function getGeoData(searchStr){
+    if(!fetchState.geoData){
+        fetchState.geoData = true;
+        fetch (`https://geocoding-api.open-meteo.com/v1/search?name=${searchStr}`)
+        .then((res)=>res.json())
+        .then((data)=>{parseGeoData(data); fetchState.geoData = false;});
+        }
+}
+function parseGeoData(data){
+    searchLocList.elem.innerHTML = "";
+    if(data.results){
+        const results = data.results;
+        const templateLi = document.createElement("li");
+        // create list
+        searchLocList.open();
+        
+        results.forEach(result => {
+            const tempLi = templateLi.cloneNode(false);
+            let city = "", country = "", state = "";
+            if(result.admin1){
+                state = result.admin1 + ",&nbsp;";
+            }
+            if(result.name){
+                city = result.name + ",&nbsp;";
+            }
+            if(result.country_code){
+                country = result.country_code;
+            }
+            tempLi.innerHTML = `${city}${state}${country}`;
+
+            tempLi.addEventListener("click", ()=>{
+                getCoords({
+                    latitude: result.latitude,
+                    longitude: result.longitude,
+                    city: city,
+                    country: result.country,
+                });
+                searchLocList.close();
+            });
+
+            searchLocList.elem.append(tempLi);
+        });
+
+        // POPULATE LIST
+    }else{
+        searchLocList.elem.insertAdjacentHTML("beforeend", "<li>No Results</li>");
+    }
+}
