@@ -61,3 +61,31 @@ body{
     opacity: 1;
     transform: translateX(0) translateY(0);
 }
+#mobileBlock{
+    display: none;
+}
+/* NOT MOBILE SUPPORTED At The Moment */
+@media only screen and (max-width: 900px) {
+    #mobileBlock{
+        position: fixed;
+        top:0;
+        left:0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: azure;
+        z-index: 999;
+    }
+    #mobileBlock::after{
+        content: "Please View on a larger device";
+        font-size: xx-large;
+        display: inline-flex;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+  }
