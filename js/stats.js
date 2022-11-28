@@ -1,6 +1,6 @@
 let settings;
         /*
-        settings = [timesVisited, WeatherUnits, userLat, userLong, userCity, userCountry]
+        settings = [timesVisited, WeatherUnits, userLatitude, userLongitude, userCity, userCountry]
         */
 
         // FIRST RUN

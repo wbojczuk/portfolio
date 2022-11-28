@@ -1,10 +1,12 @@
 let wUnits = weatherUnits.dataset.weatherunits;
 let userLatLong = [];
+
 const fetchState = {
     weather: false,
     geoData: false,
     searchTimer: null,
 }
+
 const weatherCodes = {
     clear: [0],
     partial_cloudy: [1,2],
@@ -17,6 +19,8 @@ const weatherCodes = {
     snow_shower: [85, 86],
     thunder_storm: [95, 96, 99]
 };
+
+// Main Weather Function
 function getCoords(type){
     // Pulls data from LocalStorage
     if(type == "saved"){
@@ -44,6 +48,7 @@ function getCoords(type){
                 updateSettings();
                 displayLocationName("default")});
   }
+    // Get Weather about default location 
 }else if(type == "default"){
         getWeatherData(-27.713843, 29.997177);
         userLatLong = [-27.713843, 29.997177];
@@ -52,7 +57,7 @@ function getCoords(type){
         updateSettings();
         displayLocationName("default");
 }else{
-    
+    // Custom location in the form of an object
     getWeatherData(type.latitude, type.longitude);
     userLatLong = [type.latitude, type.longitude];
     settings[2] = type.latitude;
@@ -61,8 +66,9 @@ function getCoords(type){
     displayLocationName({city: type.city, country: type.country});
   }
 }
+
+// Fetch Weather Data Via open-meteo API
 function getWeatherData(lat, long){
-    // Fetch Weather Data Via open-meteo API
     if(!fetchState.weather){
     fetchState.weather = true;
     fetch (`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&current_weather=true&daily=temperature_2m_max&daily=sunrise&daily=sunset&timezone=auto`)
@@ -70,7 +76,8 @@ function getWeatherData(lat, long){
     .then((data)=>{showWeatherData(data); fetchState.weather = false;});
     }
 }
-// Display Fetched Weather Data
+
+// Display Weather Data In DOM
 function showWeatherData(weather){
     // Set Temperature
     let weatherTemp = weather.current_weather.temperature;
@@ -116,7 +123,7 @@ function toCelcius(far){
     return ((far - 32) / 1.8)
 }
 
-// Get Geographical data about co-ords using opencagedata API
+// Get Geographical data about co-ords using opencagedata API (AutoDetect Loaction)
 function getLocationName(loc){
     fetch (`https://api.opencagedata.com/geocode/v1/json?key=37bda152db014c79a8f883a28053c61e&q=${loc.lat}%2C+${loc.long}&pretty=1&no_annotations=1`)
     .then((res)=>res.json())
@@ -125,7 +132,8 @@ function getLocationName(loc){
     });
     
 }
-// Display Geographical Data
+
+// Display Geographical Data On DOM
 function displayLocationName(loc){
     let city = "", country = "";
 
@@ -166,7 +174,6 @@ function displayLocationName(loc){
          settings[4] = loc.city;
          updateSettings();
     }
-
     const locElem = document.getElementById("weatherLocation");
     locElem.innerHTML = `<div class="loc-wrapper"><div class="city">${city}</div><div class="country">${country}</div></div>`;
 }
@@ -177,23 +184,21 @@ if(settings[3] != false){
 }else{
     getCoords("default");
 }
-// Promt User for new location
+// Refresh Button Listener
 document.querySelector("#refreshLoc button").addEventListener("click", ()=>{getCoords("getloc")});
 
-// REFRESH WEATHER
+// Refresh Weather Every Minute
 setInterval(
 ()=>{
     getWeatherData(userLatLong[0], userLatLong[1]);
 }
 ,60000);
 
-// Search by geographic data
+
 const searchLocInput = document.getElementById("searchLocInput");
 const searchLocButton = document.querySelector("#searchLoc button");
-
 const searchLocList = {
     elem: document.querySelector("#searchLoc ul"),
-
     isOpen: false,
     clicked: false,
 
@@ -212,20 +217,18 @@ const searchLocList = {
 searchLocList.elem.addEventListener("click", ()=>{
     searchLocList.clicked = true;
 });
+
 window.addEventListener("click", ()=>{
     if(!searchLocList.clicked && searchLocList.isOpen){
         searchLocList.close();
-        console.log("hey")
     }
 });
-
 
 searchLocButton.addEventListener("click", ()=>{
     getGeoData(searchLocInput.value);
 });
 
 searchLocInput.addEventListener("input", ()=>{
-    
     if(searchLocInput.value == ""){
         clearTimeout(fetchState.searchTimer);
         searchLocList.close();
@@ -236,7 +239,7 @@ searchLocInput.addEventListener("input", ()=>{
         fetchState.searchTimer = setTimeout(()=>{
             fetchState.geoData = false;
             getGeoData(searchLocInput.value);
-        },1000);
+        },500);
     }
    
 });
@@ -248,9 +251,7 @@ searchLocInput.addEventListener("keypress", (evt)=>{
     }
 });
 
-
-
-
+// Get Co-Ords from human readable location
 function getGeoData(searchStr){
     if(!fetchState.geoData){
         fetchState.geoData = true;
@@ -259,6 +260,8 @@ function getGeoData(searchStr){
         .then((data)=>{parseGeoData(data); fetchState.geoData = false;});
         }
 }
+
+// Parse Results into a list
 function parseGeoData(data){
     searchLocList.elem.innerHTML = "";
     if(data.results){
@@ -282,6 +285,7 @@ function parseGeoData(data){
             tempLi.innerHTML = `${city}${state}${country}`;
 
             tempLi.addEventListener("click", ()=>{
+                clearTimeout(fetchState.searchTimer);
                 getCoords({
                     latitude: result.latitude,
                     longitude: result.longitude,
