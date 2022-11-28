@@ -214,10 +214,12 @@ const searchLocList = {
     }
 };
 
-searchLocList.elem.addEventListener("click", ()=>{
+searchLocList.elem.addEventListener("mousedown", ()=>{
     searchLocList.clicked = true;
 });
-
+window.addEventListener("mouseup", ()=>{
+    searchLocList.clicked = false;
+});
 window.addEventListener("click", ()=>{
     if(!searchLocList.clicked && searchLocList.isOpen){
         searchLocList.close();
@@ -293,6 +295,7 @@ function parseGeoData(data){
                     country: result.country,
                 });
                 searchLocList.close();
+                
             });
 
             searchLocList.elem.append(tempLi);
