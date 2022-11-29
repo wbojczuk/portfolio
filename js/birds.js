@@ -6,9 +6,7 @@ const birdAnim = {
 
         const birds = document.querySelectorAll(".bird");
         birds.forEach((bird)=>{
-
             birdAnim.animBird(bird);
-
         });
 
     },

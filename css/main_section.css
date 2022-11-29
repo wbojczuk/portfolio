@@ -53,6 +53,87 @@
         transform: translateY(0);
     }
 }
+/* RESUME BUTTON */
+#resumeButton{
+    position: absolute;
+    top: 5vw;
+    right:20vw;
+    display: inline-block;
+    padding: 0.2vw 1.5vw;
+    border: 0px solid transparent;
+    /* border-radius: 10px; */
+    color: transparent;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: monospace;
+    transform: rotate(5deg);
+    z-index: 5;
+    
+}
+#resumeButton:hover::after{
+    background-color: #104697
+}
+#resumeButton::before{
+    position: absolute;
+    top:-5%;
+    left:-2.5%;
+    content: "";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 105%;
+    height: 110%;
+
+    background: linear-gradient(45deg, #e4e7f3, #002bff, #c3cdf5);
+    background-size: 400%;
+    animation: move_resume_bg 10s infinite;
+    filter: blur(4px);
+}
+#resumeButton::after{
+    position: absolute;
+    top:5%;
+    left: 2.5%;
+    content: "Resumé";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 90%;
+    color: #347aa5;
+    background-color: #012355;
+}
+@keyframes move_resume_bg{
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+#resumeButtonLine1{
+    position: absolute;
+    display: inline-block;
+    height: 5vw;
+    width: 2px;
+    top: 1vw;
+    right:21vw;
+    z-index: 3;
+    background-color: #ccc;
+}
+#resumeButtonLine2{
+    position: absolute;
+    display: inline-block;
+    height: 5vw;
+    width: 2px;
+    top: 1vw;
+    right:28vw;
+    z-index: 3;
+    background-color: #ccc;
+}
+
 
 /* MAIN MENU */
 #mainMenu{

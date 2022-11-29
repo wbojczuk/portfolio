@@ -2,8 +2,6 @@ const hangingElems = {
     // percentage for elems to hang by
     minMax: [15, 40],
     init: ()=>{
-        
-        const container = document.getElementById("hangingElemContainer");
         const elems = document.querySelectorAll(".hanging-elem");
         const tempWire = document.createElement("div");
         tempWire.className = "hanging-elem-wire";
