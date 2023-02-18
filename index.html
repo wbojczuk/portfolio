@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="./css/hangingelems.css">
     <link rel="stylesheet" href="./css/project_section.css">
     <link rel="stylesheet" href="./css/weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/loader.js" defer></script>
     <script src="./js/jsdev.js"></script>
     <script src="./js/birds.js" defer></script>
     <script src="./js/textstorm.js" defer></script>
@@ -21,11 +26,23 @@
     <script src="./js/carousel.js" defer></script>
     <script src="./js/stats.js" defer></script>
     <script src="js/weather.js" defer></script>
+    
 </head>
 <body>
     <!-- IF MOBILE THEN DISPLAY -->
     <div id="mobileBlock"></div>
 
+    <div class="loader">
+        <div class="loader-bar"></div>
+        <div class="loader-bar"></div>
+        <div class="loader-bar"></div>
+        <div class="loader-bar"></div>
+        <div class="loader-bar"></div>
+    </div>
+    <div class="loader-bg">
+        <div class="loader-bg-clip"></div>
+    </div>
+<div id="allContent">
     <section id="mainSection">
         <h2 style="display: none;">placeholder</h2>
         <div class="bird"></div>
@@ -124,13 +141,13 @@
                     <div class="hanging-elem" style="margin-left: 45%;">
                         <img src="./img/icons/php_icon.svg" class="stack-icon" aria-hidden="true" alt="Code Icon">
                     </div>
-                    <div class="hanging-elem" style="margin-left: 55%; height: 1.2vw;">
+                    <div class="hanging-elem" style="margin-left: 55%;">
                         <img src="./img/icons/java_icon.svg" class="stack-icon" aria-hidden="true" alt="Code Icon">
                     </div>
                     <div class="hanging-elem" style="margin-left: 65%;">
                         <img src="./img/icons/gimp_icon.svg" class="stack-icon" aria-hidden="true" alt="Code Icon">
                     </div>
-                    <div class="hanging-elem" style="margin-left: 75%; height: 2.5vw;">
+                    <div class="hanging-elem" style="margin-left: 75%; ">
                         <img src="./img/icons/ps_icon.svg" class="stack-icon" aria-hidden="true" alt="Code Icon">
                     </div>
                     <div class="hanging-elem" style="margin-left: 85%; height: 0.5vw;">
@@ -176,5 +193,6 @@
         </div>
         <a href="#mainSection" class="down-arrow" id="mainUpArrow" title="Back To Top"></a>
     </section>
+</div>
 </body>
 </html>

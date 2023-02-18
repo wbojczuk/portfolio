@@ -6,7 +6,67 @@ html{
     scroll-behavior: smooth !important;
 }
 body{
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    background-color: #4b77be;
+}
+body::after{
+    content: "Loading";
+    font-family: "Bungee Shade", cursive;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -9;
+    font-size: 10vw;
+    top:0;
+    left:0;
+}
+
+/* PRELOADER */
+.loader{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 999;
+    display: inline-block;
+    pointer-events: none;
+}
+.loader-bg{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 998;
+    display: inline-block;
+    pointer-events: none;
+}
+#allContent{
+    clip-path: circle(0% at 50% 50%);
+}
+.loader-bg-clip{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    
+}
+.loader-bar{
+    width:100%;
+    height:21%;
+    background-color: #002c6e;
+}
+.loader .loader-bar:nth-of-type(even){
+    transform-origin: left;
+}
+.loader .loader-bar:nth-of-type(odd){
+    transform-origin: right;
 }
 .center-full{
     display: flex;
