@@ -31,7 +31,7 @@ const triCarousel = {
 
 
      // Automatically Move The Carousel Without User Input: true/false
-     autoSwap: true,
+     autoSwap: false,
      // Time In MS Between Each Card Moving Automatically: Integer
      swapSpeed: 4000,
      // Direction for autoSwap To Move Cards: left/right
