@@ -22,12 +22,12 @@ const triCarousel = {
 
 
     // Shuffle Card Order: true/false
-    shuffle: true,
+    shuffle: false,
     
     // Specifies the Index for the starting card: 0 - cards.length
     // --> LEAVE NULL FOR RANDOM INDEX
     // --> must have shuffle set to false for this option to be effective
-    cardStartIndex: null,
+    cardStartIndex: 6,
 
 
      // Automatically Move The Carousel Without User Input: true/false
@@ -59,23 +59,23 @@ const triCarousel = {
             link: "https://github.com/wbojczuk/JSDevTools",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
             demo: false,
-            siteDesc: `This project of mine is a framework that contains functions and prototypes which can be useful for JavaScript developers. One of these include "element.styles(str)" which takes css code as a string, parses them into individual statements, and wraps the existing "style" Element method to apply inline styles. More information and documentation can be found on the Github repository.`
+            siteDesc: `This collection of developer tools makes it easy to lazy load images, set intersection triggers, listen for changes and alert users to save them, post data, among other things. The script can either be downloaded to use locally or use with a CDN.`
         },
         {
-            title: "String Array",
+            title: "React Pagination",
             subtitle: "subtitle",
-            link: "https://github.com/wbojczuk/StringArray",
+            link: "https://github.com/wbojczuk/react-pagination",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
             demo: false,
-            siteDesc: `String Array extends the Array object's prototype to parse single dimension arrays into a String data type, it also extends the String object's prototype to parse a string in the format of a shorthand array "[1, 2, 3]" into an Array data type. As of now, the data types supported by String->Array/Array->String conversion are Booleans, Numeric Values, and Strings. I originally created this project to store arrays in localStorage and in html data-attributes.`
+            siteDesc: `A React Component that takes a list of data and divides it into pages. Depending on what page the user has selected, that section of the data is returned. Very easy to use, Documentation is on the Github Repo`
         },
         {
-            title: "File Mapper",
+            title: "DNBBGCM",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://github.com/wbojczuk/PHPFileMapper",
-            demo: "http://wbojczuk.rf.gd/?i=1",
-            siteDesc: `File Mapper is a PHP script that takes a user-specified directory and creates a visual diagram of the filesystem, if the directory specified is in the owner's webserver, all of the items in the diagram will be clickable links which open the clicked item within the browser. `
+            link: "https://wbojczuk.alwaysdata.net/dnbbgcm",
+            demo: false,
+            siteDesc: `This website was created for the Daisy National BB-Gun Championship Match. The site has been accepted as the official site and implementation is in the process. The site was built with a PHP backend.`
         },
         {
             title: "Animation Storm",
@@ -83,7 +83,7 @@ const triCarousel = {
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
             link: "https://github.com/wbojczuk/animationstorm",
             demo: "https://wbojczuk.github.io/animationstorm",
-            siteDesc: `Animation Storm is a collection of frameworks for applying preset or customized animations to elements on a webpage. There are global settings in the JavaScript file, but settings can also be passed to the script via data-attributes on the HTML element. As of now there are two major installations: Text Storm, and Confetti Storm. Text Storm allows you to transition text to your page with an animation, the self-writing text on the landing page uses it. Confetti Storm is a particle generator that mimics the visual apperance of confetti.`
+            siteDesc: `Animation Storm is a collection of frameworks for applying preset or customized animations to elements on a webpage. There are 4 current installations for Text Animation, Ambient Particle Generation, Snow Generation, and Confetti. A brief demo can be seen on the included site`
         },
         {
             title: "Syntax Highlighter",
@@ -91,16 +91,23 @@ const triCarousel = {
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
             link: "https://github.com/wbojczuk/syntaxhighlighter",
             demo: "https://wbojczuk.github.io/syntaxhighlighter/",
-            siteDesc: `Syntax Highlighter takes Either CSS or HTML code and uses Regular Expressions to highlight the code by its syntax, colors are customizable in the JavaScript file`
+            siteDesc: `Syntax Highlighter takes Either CSS or HTML source code and uses Regular Expressions to highlight the code by its syntax, colors are customizable in the JavaScript file`
         },
         {
-        title: "WMessage",
+        title: "Calvary United Methodist",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://github.com/wbojczuk/wmessage",
-            demo: "http://wmessage.great-site.net/index.php",
-            siteDesc: `WMessage is a basic direct messaging system with a functional sign-up/log-in forms. that also uses a friend system. Data is stored in text files. The program uses PHP to write to files and any "onload" needs, JavaScript is used to fetch chats, animate containers, etc. Some data is passed to JavaScript by PHP through global variables while other data is fetched and parsed by JavaScript itself. JavaScript listens for chat log changes and prompts a chat rebuild if detected so that chats are displayed in real-time, it creates friends/nonfriend expanded views/etc, with PHP this would be impossible without reloading the page. Passwords are hashed with SHA256 and inputted passwords are hashed and compared<br><br>
-            Log in to the demo with these credentials to see a pre-set chat. <strong>Username:</strong> test<br><strong>Password:</strong> wmessage`
+            link: "https://wbojczuk.alwaysdata.net/calvary_united",
+            demo: false,
+            siteDesc: `A Site built for the Calvary United Methodist Church. The site includes a masonry-style photo gallery, a landing page, an about section for the pastor, church schedules, and a daily bible verse powered by an API. The site's backend is PHP, Animations are done with GSAP, and the bible verse API is OurManna.`
+        },
+        {
+        title: "Mt Promiseland Farm",
+            subtitle: "subtitle",
+            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
+            link: "https://mtpromiseland.alwaysdata.net",
+            demo: false,
+            siteDesc: `This React Single Page Application was made for the influencer account mtpromiselandfarm. The UI is very mobile friendly, the site boasts its own full fledged blogging system. The backend is a NodeJS/Express API that is called to get blogs, post blogs, and delete blogs. The frontend is created with mainly React, React-Router-Dom, GSAP, and GLideJS`
         },
         
     ],
@@ -214,7 +221,7 @@ const triCarousel = {
         .tri-carousel-card-title{
             display: flex;
             width: 100%;
-            
+            text-align: center;
             margin-top: 60%;
             padding: 2% 0;
             font-size: 2vw;

@@ -13,7 +13,7 @@ tl.to(".loader-bar", {
     onComplete: afterAnim
 }, "-=.1")
 .from("#resumeButton, #resumeButtonLine1, #resumeButtonLine2", {
-    y: -100,
+    y: -200,
     ease: "bounce.out",
     duration: 1
 })

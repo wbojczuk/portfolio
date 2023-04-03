@@ -1,0 +1,106 @@
+#hiringSection{
+    height: 130vh;
+    background-color: #012355;
+    width: 100vw;
+    position: relative;
+    z-index: 900;
+    color: rgb(131, 182, 240);
+}
+#hiringTitle{
+    text-align: center;
+    display: inline-block;
+    font-family: monospace;
+    font-weight: 300;
+    font-size: 4vw;
+    margin: 2vh 0 5vh 0;
+    background-color: #012355;
+    position: relative;
+}
+#hiringTitle::after{
+    z-index: -999;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 1.5px);
+    left: -75%;
+    width: 250%;
+    height: 3px;
+    background-color: rgb(131, 182, 240);
+}
+
+#hiringCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hiringArrow{
+    background-image: url('../img/caret_down.svg');
+}
+.hiringCard{
+    width: 25vw;
+    height: 30vw;
+    margin: 0 5vw;
+    background-color: rgb(131, 182, 240);
+    border-radius: 10px;
+    color: black;
+}
+.hiringCard .title{
+    font-family: monospace;
+    text-align: center;
+    margin-top: 3%;
+    font-weight: 200;
+    font-size: 2.5vw;
+}
+.hiringCard .description{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    font-weight: 200;
+    font-size: 1.5vw;
+}
+
+.hiringCard .price{
+    text-align: left;
+    font-family: monospace;
+    font-size: 1.3vw;
+    padding: 2% 0.5vw;
+}
+
+#hiringDescription{
+    display: inline-block;
+    width: 70%;
+    margin-left: 15%;
+    font-family: sans-serif;
+    font-size: 1.2vw;
+    margin-bottom: 5vw;
+    text-align: center;
+}
+
+.subscription-container{
+    width: 50%;
+    margin-left: 25%;;
+}
+div:has(.hiring-icon){
+    margin-bottom: 5vw;
+}
+.hiring-icon{
+    width: 6vw;
+    height: 6vw;
+    margin: 0 1vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.hiring-icon:nth-child(1){
+    background-image: url("../img/fiverr.svg");
+}
+.hiring-icon:nth-child(2){
+    background-image: url("../img/email.svg");
+}
+.hiring-icon:nth-child(3){
+    background-image: url("../img/instagram.svg");
+}
