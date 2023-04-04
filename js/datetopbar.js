@@ -27,6 +27,16 @@ const dateTopBar = {
             font-weight: 400;
             letter-spacing: .01em;
         }
+        /* Mobile Styles */
+@media only screen and (max-width: 900px) {
+    #dateTopBar{
+        height: 3vh;
+        top: -2.5vh;
+    }
+    #dateTopBar span{
+        font-size: 2vh;
+    }
+}
         `;
         document.getElementsByTagName("head")[0].append(barStyles);
 
