@@ -170,3 +170,61 @@
 #mainDownArrow{
     background-image: url('../img/caret_down.svg');
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 900px) {
+    #mainSection{
+        margin-top: 2.5vh;
+    }
+    #dateTopBar{
+        height: 3vh;
+        top: -2.5vh;
+    }
+    #dateTopBar span{
+        font-size: 2vh;
+    }
+    #introText{
+        top: 10vh;
+        font-size: 3vh;
+        letter-spacing: 0em;
+    }
+    
+    #introText .intro1{
+        font-size: 9vh;
+    }
+    
+    #introText .intro2{
+        opacity: 0;
+        font-size: 3vh;
+        margin-left: 2vw;
+        top:-1vw;
+    }
+    
+    #mainWave{
+        height: 25%;
+        background-position: center;
+    }
+    
+    /* RESUME BUTTON */
+    #resumeButton{
+        position: absolute;
+        top: 5vw;
+        right:30vw;
+        padding: 0.2vh 1.5vh;
+        font-size: 2vh;
+    }
+    #resumeButtonLine1{
+        right:31vw;
+    }
+    #resumeButtonLine2{
+        right:48vw;
+    }
+    
+    
+    /* MAIN MENU */
+    #mainMenu{
+        width: 30%;
+        right:0vw;
+    }
+    
+}

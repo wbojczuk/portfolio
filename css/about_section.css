@@ -35,6 +35,11 @@
     font-size: 2vw;
 }
 
+.hanging-elem:nth-child(3) img{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
 #aboutContainer:after{
     content: '';
     display: inline-block;
@@ -144,4 +149,66 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -85;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 900px) {
+    
+    #aboutWrapper{
+        margin-top: 20vh;
+    }
+    
+    #aboutContainer{
+        width: 80vw;
+        height: 40vw;
+    }
+    
+    #aboutContainer:before{
+        font-size: 2vh;
+    }
+    
+    #aboutContainer:after{
+        top:0.6vh;
+        left:0.6vh;
+    }
+    #aboutText{
+        font-size: 1.4vh;
+    }
+    
+    #stackWrapper{
+        top: 10vh;
+        margin-right: calc(10vw - 1vh);
+    }
+    
+    #stackContainer{
+        width: 80vw;
+        height: 40vw;
+    }
+    
+    #stackContainer:before{
+        top:-1vh;
+        right:-2vh;
+        font-size: 2vh;
+        padding: 0.2vh 1vh;
+    }
+    .stack-icon{
+        width: 3.5vh;
+        height: 3.5vh;
+    }
+    .hanging-elem:nth-child(3) img{
+        width: 2.5vh;
+        height: 2.5vh;
+    }
+    
+    #timesVisited{
+        top:4vh;
+        right: 12.5vw;
+        width: 75vw;
+        height: 10vw;
+        font-size: 1.5vh;
+    }
+    #timesVisited div span{
+        width: 3.5vh;
+        height: 3.5vh;
+    }
 }

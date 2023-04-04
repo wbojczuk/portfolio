@@ -104,3 +104,40 @@ div:has(.hiring-icon){
 .hiring-icon:nth-child(3){
     background-image: url("../img/instagram.svg");
 }
+/* Mobile Styles */
+@media only screen and (max-width: 900px) {
+    #hiringSection{
+        height: 100vh;
+    }
+    #hiringTitle{
+        font-size: 4vh;
+    }
+    .hiringCard{
+        width: 45vw;
+        height: 55vw;
+    }
+    .hiringCard .title{
+        font-size: 2.5vh;
+    }
+    .hiringCard .description{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-bottom: 10%;
+        font-size: 1.4vh;
+    }
+    
+    .hiringCard .price{
+        font-size: 1.2vh;
+    }
+    
+    #hiringDescription{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.3vh;
+    }
+    .hiring-icon{
+        width: 6vh;
+        height: 6vh;
+        margin: 0 1vh;
+    }
+}

@@ -129,9 +129,9 @@ body::after{
 #mobileBlock{
     display: none;
 }
-/* NOT MOBILE SUPPORTED At The Moment */
+/* Mobile Styles */
 @media only screen and (max-width: 900px) {
-    #mobileBlock{
+    /* #mobileBlock{
         position: fixed;
         top:0;
         left:0;
@@ -152,5 +152,17 @@ body::after{
         height: 100%;
         align-items: center;
         justify-content: center;
+    } */
+    .down-arrow{
+        display: inline-block;
+        position: absolute;
+        bottom: 2%;
+        width: 10vh;
+        height: 10vh;
+        left: calc(50% - 5vh);
+    
+        background-size: 100%;
+        animation: arrow_bounce 3s infinite;
+        cursor: pointer;
     }
   }

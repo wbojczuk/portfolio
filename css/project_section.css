@@ -127,3 +127,43 @@
 #projectAboutDemo:hover{
     background-color: rgb(12, 61, 153);
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 900px) {
+    .project-title{
+        font-size: 6vh;
+    }
+   .space-between-60{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+   }
+   #triCarousel{
+    margin-left: 0;
+   }
+    
+    #carouselStyleSwitch{
+        display: none;
+    }
+    #projectAbout{
+        width: 40vw;
+        margin-right: 0;
+        height: 55vw;
+    }
+    #projectAboutTitle{
+        font-size: 2.2vh;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    #projectAboutText{
+        max-height: 70%;
+        font-size: 1.5vh;
+    }
+    #projectAboutDemo{
+        top:0.5vh;
+        left:-3vh;
+        width: 3vh;
+        padding: 1vh 0;
+        font-size: 2vh;
+    }
+}

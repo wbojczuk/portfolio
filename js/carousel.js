@@ -266,6 +266,23 @@ const triCarousel = {
         .carousel-arrow:hover{
             transform: scale(1.2);
         }
+        @media only screen and (max-width: 900px) {
+           #triCarousel{
+            width: 60%;
+            margin-left: 0;
+           }
+           .tri-carousel-larrow{
+            height: 20%;
+            left: -35%;
+           }
+           .tri-carousel-rarrow{
+            height: 20%;
+            right: -35%;
+           }
+           .tri-carousel-card-title{
+            font-size: 1.5vh;
+           }
+        }
         `;
 
 
