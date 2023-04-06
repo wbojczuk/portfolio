@@ -71,7 +71,7 @@ function getCoords(type){
 function getWeatherData(lat, long){
     if(!fetchState.weather){
     fetchState.weather = true;
-    fetch (`http://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&current_weather=true&daily=temperature_2m_max&daily=sunrise&daily=sunset&timezone=auto`)
+    fetch (`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&current_weather=true&daily=temperature_2m_max&daily=sunrise&daily=sunset&timezone=auto`)
     .then((res)=>res.json())
     .then((data)=>{showWeatherData(data); fetchState.weather = false;});
     }
@@ -257,7 +257,7 @@ searchLocInput.addEventListener("keypress", (evt)=>{
 function getGeoData(searchStr){
     if(!fetchState.geoData){
         fetchState.geoData = true;
-        fetch (`http://geocoding-api.open-meteo.com/v1/search?name=${searchStr}`)
+        fetch (`https://geocoding-api.open-meteo.com/v1/search?name=${searchStr}`)
         .then((res)=>res.json())
         .then((data)=>{parseGeoData(data); fetchState.geoData = false;});
         }
