@@ -6,9 +6,9 @@ let settings;
         // FIRST RUN
         if(!localStorage.getItem("settings")){
             // DEFAULT SETTINGS
-            localStorage.setItem("settings", "[0, 'c', false, false, false, false]");
+            localStorage.setItem("settings", JSON.stringify([0, 'c', false, false, false, false]));
         }
-        settings = (localStorage.getItem("settings")).parseArray();
+        settings = JSON.parse(localStorage.getItem("settings"));
 
         ++settings[0];
         updateSettings();
@@ -24,7 +24,7 @@ let settings;
         }
 
         function updateSettings(){
-            localStorage.setItem("settings", [...settings].parseString());
+            localStorage.setItem("settings", JSON.stringify([...settings]));
         }
 
 
