@@ -184,7 +184,7 @@
         font-size: 2vh;
     }
     #introText{
-        top: 10vh;
+        top: 30vh;
         font-size: 3vh;
         letter-spacing: 0em;
     }
@@ -211,19 +211,20 @@
         top: 5vw;
         right:30vw;
         padding: 0.2vh 1.5vh;
-        font-size: 2vh;
+        font-size: 2.5vh;
     }
     #resumeButtonLine1{
         right:31vw;
     }
     #resumeButtonLine2{
-        right:48vw;
+        right:52vw;
     }
     
     
     /* MAIN MENU */
     #mainMenu{
-        width: 30%;
+        top: 10vh;
+        width: 50vw;
         right:0vw;
     }
     
