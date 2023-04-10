@@ -1,4 +1,5 @@
 #hiringSection{
+    margin-bottom: -5vw;
     height: 150vh;
     background-color: #012355;
     width: 100vw;
@@ -107,6 +108,7 @@ div:has(.hiring-icon){
 /* Mobile Styles */
 @media only screen and (max-width: 900px) {
     #hiringSection{
+        margin-bottom: -3vh;
         height: 100vh;
     }
     #hiringTitle{
