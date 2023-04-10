@@ -18,9 +18,9 @@ tl.to(".loader-bar", {
     duration: 1
 })
 .from("#mainMenu", {
-    y: "-100%",
+    y: "-200%",
     ease: "bounce.out",
-    duration: 1
+    duration: 1.5
 }, '-=0.6');
 
 
