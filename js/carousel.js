@@ -125,6 +125,7 @@ const triCarousel = {
     */
 
     init: ()=>{
+        
 
         // Inject Styles
 
