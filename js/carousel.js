@@ -109,6 +109,14 @@ const triCarousel = {
             demo: false,
             siteDesc: `This React Single Page Application was made for the influencer account mtpromiselandfarm. The UI is very mobile friendly, the site boasts its own full fledged blogging system. The backend is a NodeJS/Express API that is called to get blogs, post blogs, and delete blogs. The frontend is created with mainly React, React-Router-Dom, GSAP, and GLideJS`
         },
+        {
+            title: "GrowInCode Blog",
+            subtitle: "subtitle",
+            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
+            link: "https://growincode-frontend.pages.dev",
+            demo: false,
+            siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare, and the backend/api is hosted via Render`
+        },
         
     ],
 
