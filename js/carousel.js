@@ -115,7 +115,7 @@ const triCarousel = {
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
             link: "https://growincode-frontend.pages.dev",
             demo: false,
-            siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare, and the backend/api is hosted via Render`
+            siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare, and the backend/api is hosted via Render.`
         }
         
     ],
