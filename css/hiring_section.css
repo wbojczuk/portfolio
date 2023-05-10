@@ -96,13 +96,13 @@ div:has(.hiring-icon){
     background-size: 100%;
     background-position: center;
 }
-.hiring-icon:nth-child(1){
+/* .hiring-icon:nth-child(1){
     background-image: url("../img/fiverr.svg");
-}
-.hiring-icon:nth-child(2){
+} */
+.hiring-icon:nth-child(1){
     background-image: url("../img/email.svg");
 }
-.hiring-icon:nth-child(3){
+.hiring-icon:nth-child(2){
     background-image: url("../img/instagram.svg");
 }
 /* Mobile Styles */
