@@ -27,7 +27,7 @@ const triCarousel = {
     // Specifies the Index for the starting card: 0 - cards.length
     // --> LEAVE NULL FOR RANDOM INDEX
     // --> must have shuffle set to false for this option to be effective
-    cardStartIndex: 6,
+    cardStartIndex: 5,
 
 
      // Automatically Move The Carousel Without User Input: true/false
