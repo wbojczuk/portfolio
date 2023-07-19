@@ -62,14 +62,6 @@ const triCarousel = {
             siteDesc: `This collection of developer tools makes it easy to lazy load images, set intersection triggers, listen for changes and alert users to save them, post data, among other things. The script can either be downloaded to use locally or use with a CDN.`
         },
         {
-            title: "React Pagination",
-            subtitle: "subtitle",
-            link: "https://github.com/wbojczuk/react-pagination",
-            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            demo: false,
-            siteDesc: `A React Component that takes a list of data and divides it into pages. Depending on what page the user has selected, that section of the data is returned. Very easy to use, Documentation is on the Github Repo`
-        },
-        {
             title: "Animation Storm",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
