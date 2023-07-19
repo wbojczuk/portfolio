@@ -41,19 +41,19 @@ function getCoords(type){
                 userLatLong = [pos.coords.latitude, pos.coords.longitude];
             }, ()=>{
                 // If Location Not Allowed
-                getWeatherData(34.166080, -84.800613);
-                userLatLong = [34.166080, -84.800613];
-                settings[2] = 34.166080;
-                settings[3] = -84.800613;
+                getWeatherData(34.16533, -84.80231);
+                userLatLong = [34.16533, -84.80231];
+                settings[2] = 34.16533;
+                settings[3] = -84.80231;
                 updateSettings();
                 displayLocationName("default")});
   }
     // Get Weather about default location 
 }else if(type == "default"){
-        getWeatherData(34.166080, -84.800613);
-        userLatLong = [34.166080, -84.800613];
-        settings[2] = 34.166080;
-        settings[3] = -84.800613;
+        getWeatherData(34.16533, -84.80231);
+        userLatLong = [34.16533, -84.80231];
+        settings[2] = 34.16533;
+        settings[3] = -84.80231;
         updateSettings();
         displayLocationName("default");
 }else{
