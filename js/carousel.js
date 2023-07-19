@@ -70,14 +70,6 @@ const triCarousel = {
             siteDesc: `A React Component that takes a list of data and divides it into pages. Depending on what page the user has selected, that section of the data is returned. Very easy to use, Documentation is on the Github Repo`
         },
         {
-            title: "DNBBGCM",
-            subtitle: "subtitle",
-            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://wbojczuk.alwaysdata.net/dnbbgcm",
-            demo: false,
-            siteDesc: `This website was created for the Daisy National BB-Gun Championship Match. The site has been accepted as the official site and implementation is in the process. The site was built with a PHP backend.`
-        },
-        {
             title: "Animation Storm",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
@@ -102,12 +94,12 @@ const triCarousel = {
             siteDesc: `A Site built for the Calvary United Methodist Church. The site includes a masonry-style photo gallery, a landing page, an about section for the pastor, church schedules, and a daily bible verse powered by an API. The site's backend is PHP, Animations are done with GSAP, and the bible verse API is OurManna.`
         },
         {
-        title: "Mt Promiseland Farm",
+            title: "DNBBGCM",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://mtpromiselandfarm.com",
+            link: "https://wbojczuk.alwaysdata.net/dnbbgcm",
             demo: false,
-            siteDesc: `This React Single Page Application was made for the influencer account mtpromiselandfarm. The UI is very mobile friendly, the site boasts its own full fledged blogging system. The backend is a NodeJS/Express API that is called to get blogs, post blogs, and delete blogs. The frontend is created with mainly React, React-Router-Dom, GSAP, and GLideJS`
+            siteDesc: `This website was created for the Daisy National BB-Gun Championship Match. The site has been accepted as the official site and implementation is in the process. The site was built with a PHP backend.`
         },
         {
             title: "GrowInCode Blog",
@@ -115,8 +107,17 @@ const triCarousel = {
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
             link: "https://growincode-frontend.pages.dev",
             demo: false,
-            siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare, and the backend/api is hosted via Render.`
-        }
+            siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare to get caching.`
+        },
+        {
+            title: "Mt Promiseland Farm",
+            subtitle: "subtitle",
+            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
+            link: "https://mtpromiselandfarm.com",
+            demo: false,
+            siteDesc: `This React Single Page Application was made for the influencer account mtpromiselandfarm. The UI is very mobile friendly, the site boasts its own full fledged blogging system. The backend is a NodeJS/Express API that is called to get blogs, post blogs, and delete blogs. The frontend is created with mainly React, React-Router-Dom, GSAP, and GLideJS`
+        },
+        
         
     ],
 

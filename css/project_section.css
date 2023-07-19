@@ -136,7 +136,7 @@
    .space-between-60{
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
    }
    #triCarousel{
     margin-left: 0;
