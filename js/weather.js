@@ -41,19 +41,19 @@ function getCoords(type){
                 userLatLong = [pos.coords.latitude, pos.coords.longitude];
             }, ()=>{
                 // If Location Not Allowed
-                getWeatherData(-27.713843, 29.997177);
-                userLatLong = [-27.713843, 29.997177];
-                settings[2] = -27.713843;
-                settings[3] = 29.997177;
+                getWeatherData(34.166080, -84.800613);
+                userLatLong = [34.166080, -84.800613];
+                settings[2] = 34.166080;
+                settings[3] = -84.800613;
                 updateSettings();
                 displayLocationName("default")});
   }
     // Get Weather about default location 
 }else if(type == "default"){
-        getWeatherData(-27.713843, 29.997177);
-        userLatLong = [-27.713843, 29.997177];
-        settings[2] = -27.713843;
-        settings[3] = 29.997177;
+        getWeatherData(34.166080, -84.800613);
+        userLatLong = [34.166080, -84.800613];
+        settings[2] = 34.166080;
+        settings[3] = -84.800613;
         updateSettings();
         displayLocationName("default");
 }else{
@@ -139,10 +139,10 @@ function displayLocationName(loc){
 
     if(loc == "default"){
         // If not in LocalStorage and user denied location
-         city = "Newcastle,&nbsp;";
-         country = "South Africa";
-         settings[5] = "South Africa";
-         settings[4] = "Newcastle,&nbsp;";
+         city = "Cartersville,&nbsp;";
+         country = "United States";
+         settings[5] = "United States";
+         settings[4] = "Cartersville,&nbsp;";
          updateSettings();
     }else if(loc == "saved"){
         // If in LocalStorage
