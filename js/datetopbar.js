@@ -70,8 +70,11 @@ const dateTopBar = {
             case 11: month = "December";
             break;
         }
-        newSpan.textContent = `${month} ${curDate.getDate()}, ${curDate.getFullYear()}`;
+        newSpan.textContent = `${month} ${curDate.getDate()}, ${curDate.getFullYear()} - ${curDate.getHours()}:${curDate.getMinutes()}:${curDate.getSeconds()}`;
+        dateBar.innerHTML = "";
         dateBar.append(newSpan);
+        
     }
 };
+setInterval(dateTopBar.init, 1000)
 dateTopBar.init();
