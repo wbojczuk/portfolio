@@ -110,6 +110,14 @@ const triCarousel = {
             siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare to get caching.`
         },
         {
+            title: "Runtime Type Checker",
+            subtitle: "subtitle",
+            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
+            link: "https://github.com/wbojczuk/TSRuntimeTypeChecker",
+            demo: false,
+            siteDesc: `TypeScript is great for Compile-Time Type Checking, but what about type checking dynamic data during Run-Time that could potentially be wrong. That's why I created this tool, and it does it's job well. Supports primitive types, complex types and templates to check complex types against.`
+        },
+        {
             title: "Mt Promiseland Farm",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
