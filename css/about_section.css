@@ -106,6 +106,17 @@
     height: 3vw;
     z-index: 10;
 }
+.hanging-elem:nth-child(6) img{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.hanging-elem:nth-child(8) img{
+    width: 3.5vw;
+    height: 3.5vw;
+}
+.hanging-elem:nth-child(5) img{
+    margin-top: 3vw;
+}
 
 #timesVisited{
     display: inline-flex;
@@ -213,9 +224,16 @@
         width: 3.5vh;
         height: 3.5vh;
     }
-    .hanging-elem:nth-child(3) img{
+    .hanging-elem:nth-child(3) img, .hanging-elem:nth-child(6) img{
         width: 2.5vh;
         height: 2.5vh;
+    }
+    .hanging-elem:nth-child(8) img{
+        width: 4vh;
+        height: 4vh;
+    }
+    .hanging-elem:nth-child(5) img{
+        margin-top: 3vh;
     }
     
     #timesVisited{
