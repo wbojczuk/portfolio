@@ -70,7 +70,7 @@ const dateTopBar = {
             case 11: month = "December";
             break;
         }
-        newSpan.textContent = `${month} ${curDate.getDate()}, ${curDate.getFullYear()} - ${curDate.getHours()}:${curDate.getMinutes()}:${curDate.getSeconds()}`;
+        newSpan.textContent = `${month} ${curDate.getDate()}, ${curDate.getFullYear()} - ${(curDate.getHours()).toLocaleString("en-us", {minimumIntegerDigits: 2})}:${(curDate.getMinutes()).toLocaleString("en-us", {minimumIntegerDigits: 2})}:${(curDate.getSeconds()).toLocaleString("en-us", {minimumIntegerDigits: 2})}`;
         dateBar.innerHTML = "";
         dateBar.append(newSpan);
         
