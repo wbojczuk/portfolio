@@ -9,7 +9,8 @@ tl.to(".loader-bar", {
 .to("#allContent", {
     "clip-path": "circle(100% at 50% 50%)",
     ease: "power4.inOut",
-    duration: 1
+    duration: 1,
+    onComplete: afterAnim
 }, "-=.1")
 
 .from("#resumeButton, #resumeButtonLine1, #resumeButtonLine2", {
@@ -26,8 +27,7 @@ tl.to(".loader-bar", {
     x: 0,
     opacity: 1,
     duration: .5,
-    ease: "bounce.out",
-    onComplete: afterAnim
+    ease: "bounce.out"
 })
 
 
