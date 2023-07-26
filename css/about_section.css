@@ -179,6 +179,7 @@
     #aboutContainer{
         width: 80vw;
         height: 40vw;
+        padding-bottom: 1vh;
     }
     
     #aboutContainer:before{
@@ -191,7 +192,6 @@
     }
     #aboutText{
         font-size: 1.4vh;
-        height: 95%;
     }
     
     #stackWrapper{
