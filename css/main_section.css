@@ -9,6 +9,23 @@
     z-index: 910;
 }
 
+#contactIcon{
+    display: inline-block;
+    position: absolute;
+    width: 4vw;
+    aspect-ratio: 1/1;
+    background-image: url("../img/contact_icon.svg");
+    background-size: 100%;
+    background-position: center;
+    top: 43vh;
+    right: 8vw;
+    text-decoration: none;
+    transition: 0.3s transform;
+}
+#contactIcon:hover{
+    transform: scale(1.1);
+}
+
 #introText{
     display: inline-block;
     position: relative;
@@ -173,6 +190,13 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 900px) {
+
+    #contactIcon{
+        width: 7vh;
+        top: 12vh;
+        left: 20vw;
+    }
+
     #mainSection{
         margin-top: 2.5vh;
     }
