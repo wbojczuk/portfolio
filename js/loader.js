@@ -24,6 +24,7 @@ tl.to(".loader-bar", {
 }, '-=0.6')
 .to("#contactIcon", {
     x: 0,
+    opacity: 1,
     duration: .5,
     ease: "bounce.out",
     onComplete: afterAnim

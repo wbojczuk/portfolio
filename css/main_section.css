@@ -7,7 +7,6 @@
     background: -webkit-linear-gradient(to right, #E4E5E6, #1982c4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E4E5E6, #1982c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 910;
-    overflow: hidden;
 }
 
 #contactIcon{
@@ -18,8 +17,9 @@
     background-image: url("../img/contact_icon.svg");
     background-size: 100%;
     background-position: center;
-    top: 43vh;
-    right: 8vw;
+    top: 25vh;
+    opacity: 0;
+    right: 22vw;
     text-decoration: none;
     transition: 0.3s filter;
     transform: translateX(300%);
@@ -201,10 +201,6 @@
 
     #mainSection{
         margin-top: 2.5vh;
-    }
-    #dateTopBar{
-        height: 3vh;
-        top: -2.5vh;
     }
     #dateTopBar span{
         font-size: 2vh;
