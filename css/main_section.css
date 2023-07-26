@@ -7,6 +7,7 @@
     background: -webkit-linear-gradient(to right, #E4E5E6, #1982c4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E4E5E6, #1982c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 910;
+    overflow: hidden;
 }
 
 #contactIcon{
@@ -20,10 +21,11 @@
     top: 43vh;
     right: 8vw;
     text-decoration: none;
-    transition: 0.3s transform;
+    transition: 0.3s filter;
+    transform: translateX(300%);
 }
 #contactIcon:hover{
-    transform: scale(1.1);
+    filter: invert(0.2);
 }
 
 #introText{

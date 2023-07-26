@@ -9,8 +9,7 @@ tl.to(".loader-bar", {
 .to("#allContent", {
     "clip-path": "circle(100% at 50% 50%)",
     ease: "power4.inOut",
-    duration: 1,
-    onComplete: afterAnim
+    duration: 1
 }, "-=.1")
 
 .from("#resumeButton, #resumeButtonLine1, #resumeButtonLine2", {
@@ -22,8 +21,13 @@ tl.to(".loader-bar", {
     y: "-200%",
     ease: "bounce.out",
     duration: 1.5
-}, '-=0.6');
-
+}, '-=0.6')
+.to("#contactIcon", {
+    x: 0,
+    duration: .5,
+    ease: "bounce.out",
+    onComplete: afterAnim
+})
 
 
 function stackAnim(){
