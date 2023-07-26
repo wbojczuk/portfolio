@@ -17,7 +17,7 @@ const dateTopBar = {
             background: #8E0E00;
             background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
             background: linear-gradient(to right, #4286f4, #373b44);
-            z-index: 990;
+            z-index: 10;
         }
         #dateTopBar span{
             margin-right: 15%;
