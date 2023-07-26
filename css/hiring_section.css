@@ -1,11 +1,22 @@
 #hiringSection{
-    margin-bottom: -5vw;
     height: 150vh;
     background-color: #012355;
     width: 100vw;
     position: relative;
-    z-index: 900;
+    z-index: 880;
     color: rgb(131, 182, 240);
+}
+#hiringWave{
+    display: inline-block;
+    position: absolute;
+    height: 20vw;
+    width: 100%;
+    top: 0vw;
+    background-image: url("../img/hire_wave.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -999;
 }
 #hiringTitle{
     text-align: center;
@@ -13,18 +24,28 @@
     font-family: monospace;
     font-weight: 300;
     font-size: 4vw;
-    margin: 2vh 0 5vh 0;
-    background-color: #012355;
+    margin: 5vh 0 5vh 0;
     position: relative;
 }
 #hiringTitle::after{
-    z-index: -999;
+    z-index: -990;
     content: "";
     display: inline-block;
     position: absolute;
     top: calc(50% - 1.5px);
-    left: -75%;
-    width: 250%;
+    left: 105%;
+    width: 75%;
+    height: 3px;
+    background-color: rgb(131, 182, 240);
+}
+#hiringTitle::before{
+    z-index: -990;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 1.5px);
+    right: 105%;
+    width: 75%;
     height: 3px;
     background-color: rgb(131, 182, 240);
 }
@@ -33,6 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 900;
 }
 #hiringArrow{
     background-image: url('../img/caret_down.svg');

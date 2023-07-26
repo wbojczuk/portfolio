@@ -23,6 +23,31 @@ body::after{
     top:0;
     left:0;
 }
+
+#sendSuccess{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#sendSuccessConfetti{
+    /* display: inline-block; */
+    position: relative;
+}
+#sendSuccessText{
+    text-align: center;
+    font-family: "Bungee Shade", cursive;
+    font-size: 5em;
+    color: rgb(44, 226, 126);
+    opacity: 0;
+    transform: translateY(-30px);
+}
 .center{
     display: flex;
     align-items: center;
@@ -131,6 +156,9 @@ body::after{
 }
 /* Mobile Styles */
 @media only screen and (max-width: 900px) {
+    #sendSuccessText{
+        font-size: 1.8em;
+    }
     /* #mobileBlock{
         position: fixed;
         top:0;

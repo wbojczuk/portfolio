@@ -4,8 +4,19 @@
     height: 100vh;
     width: 100vw;
     background-color: #368cc2;
-    z-index: 5;
+    z-index: 910;
     overflow: hidden;
+}
+#aboutWave{
+    display: inline-block;
+    position: absolute;
+    height: 15vw;
+    width: 100%;
+    top: 0;
+    background-image: url("../img/about_wave.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #projectTitle{
     position: relative;

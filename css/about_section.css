@@ -161,17 +161,6 @@
 #aboutDownArrow{
     background-image: url('../img/caret_down.svg');
 }
-#aboutWave{
-    position: absolute;
-    width: 100%;
-    height: 28%;
-    bottom:-14%;
-    left:0;
-    background-image: url("../img/about_wave.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -85;
-}
 
 /* Mobile Styles */
 @media only screen and (max-width: 900px) {
