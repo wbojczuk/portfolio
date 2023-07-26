@@ -164,6 +164,9 @@
     position: absolute;
     top:3vw;
     right:4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-icon{
     position: relative;
