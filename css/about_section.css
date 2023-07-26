@@ -191,6 +191,7 @@
     }
     #aboutText{
         font-size: 1.4vh;
+        height: 95%;
     }
     
     #stackWrapper{
