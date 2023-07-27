@@ -48,6 +48,7 @@ function afterAnim(){
         const sendSuccess = (urlParams.get("sendsuccess") == "true") ? true : false;
             
         if(sendSuccess){
+            window.history.replaceState({id:999}, "Page", "https://williambojczuk.dev")
             const sendSuccessElem = document.getElementById("sendSuccess");
             sendSuccessElem.style.display = "inline-flex";
             sendSuccessElem.style.opacity = 1;
