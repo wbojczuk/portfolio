@@ -58,23 +58,23 @@ const triCarousel = {
             subtitle: "subtitle",
             link: "https://github.com/wbojczuk/JSDevTools",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            demo: false,
+            demo: "https://github.com/wbojczuk/JSDevTools",
             siteDesc: `This collection of developer tools makes it easy to lazy load images, set intersection triggers, listen for changes and alert users to save them, post data, among other things. The script can either be downloaded to use locally or use with a CDN.`
         },
         {
             title: "Animation Storm",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://github.com/wbojczuk/animationstorm",
-            demo: "https://wbojczuk.github.io/animationstorm",
+            link: "https://wbojczuk.github.io/animationstorm",
+            demo: "https://github.com/wbojczuk/animationstorm",
             siteDesc: `Animation Storm is a collection of frameworks for applying preset or customized animations to elements on a webpage. There are 4 current installations for Text Animation, Ambient Particle Generation, Snow Generation, and Confetti. A brief demo can be seen on the included site`
         },
         {
             title: "Syntax Highlighter",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://github.com/wbojczuk/syntaxhighlighter",
-            demo: "https://wbojczuk.github.io/syntaxhighlighter/",
+            link: "https://wbojczuk.github.io/syntaxhighlighter/",
+            demo: "https://github.com/wbojczuk/syntaxhighlighter",
             siteDesc: `Syntax Highlighter takes Either CSS or HTML source code and uses Regular Expressions to highlight the code by its syntax, colors are customizable in the JavaScript file`
         },
         {
@@ -106,7 +106,7 @@ const triCarousel = {
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
             link: "https://github.com/wbojczuk/TSRuntimeTypeChecker",
-            demo: false,
+            demo: "https://github.com/wbojczuk/TSRuntimeTypeChecker",
             siteDesc: `TypeScript is great for Compile-Time Type Checking, but what about type checking dynamic data during Run-Time that could potentially be wrong. That's why I created this tool, and it does it's job well. Supports primitive types, complex types like Arrays, Tuples, and Objects. Also supports templates to check complex types against.`
         },
         {
