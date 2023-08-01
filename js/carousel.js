@@ -107,7 +107,7 @@ const triCarousel = {
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
             link: "https://github.com/wbojczuk/TSRuntimeTypeChecker",
             demo: "https://github.com/wbojczuk/TSRuntimeTypeChecker",
-            siteDesc: `TypeScript is great for Compile-Time Type Checking, but what about type checking dynamic data during Run-Time that could potentially be wrong. That's why I created this tool, and it does it's job well. Supports primitive types, complex types like Arrays, Tuples, and Objects. Also supports templates to check complex types against.`
+            siteDesc: `TypeScript is great for Compile-Time Type Checking, but what about type checking dynamic data during Run-Time that could potentially be wrong? That's why I created this tool, and it does it's job well. RuntimeTypeChecker Supports primitive types, complex types like Arrays, Tuples, and Objects. It also supports templates to check complex types against.`
         },
         {
             title: "Mt Promiseland Farm",
