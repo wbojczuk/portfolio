@@ -86,14 +86,6 @@ const triCarousel = {
             siteDesc: `A Site built for the Calvary United Methodist Church. The site includes a masonry-style photo gallery, a landing page, an about section for the pastor, church schedules, and a daily bible verse powered by an API. The site's backend is PHP, Animations are done with GSAP, and the bible verse API is OurManna.`
         },
         {
-            title: "DNBBGCM",
-            subtitle: "subtitle",
-            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://wbojczuk.alwaysdata.net/dnbbgcm",
-            demo: false,
-            siteDesc: `This website was created for the Daisy National BB-Gun Championship Match. The site has been accepted as the official site and implementation is in the process. The site was built with a PHP backend.`
-        },
-        {
             title: "GrowInCode Blog",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
@@ -105,9 +97,17 @@ const triCarousel = {
             title: "Runtime Type Checker",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://github.com/wbojczuk/TSRuntimeTypeChecker",
+            link: "https://wbojczuk.github.io/TSRuntimeTypeChecker/",
             demo: "https://github.com/wbojczuk/TSRuntimeTypeChecker",
             siteDesc: `TypeScript is great for Compile-Time Type Checking, but what about type checking dynamic data during Run-Time that could potentially be wrong? That's why I created this tool, and it does it's job well. RuntimeTypeChecker Supports primitive types, complex types like Arrays, Tuples, and Objects. It also supports templates to check complex types against.`
+        },
+        {
+            title: "DNBBGCM",
+            subtitle: "subtitle",
+            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
+            link: "https://wbojczuk.alwaysdata.net/dnbbgcm",
+            demo: false,
+            siteDesc: `This website was created for the Daisy National BB-Gun Championship Match. The site has been accepted as the official site and implementation is in the process. The site was built with a PHP backend.`
         },
         {
             title: "Mt Promiseland Farm",
