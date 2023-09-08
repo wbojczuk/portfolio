@@ -94,6 +94,14 @@ const triCarousel = {
             siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare to get caching.`
         },
         {
+            title: "Cartersville Outreach International",
+            subtitle: "subtitle",
+            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
+            link: "https://cartersvilleoutreachinternational.org",
+            demo: false,
+            siteDesc: `Website created for non-profit evangelical ministry. Created with NextJS, TypeScript, MongoDB, KindeAuth, among other technologies.`
+        },
+        {
             title: "Runtime Type Checker",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
