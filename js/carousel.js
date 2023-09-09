@@ -86,12 +86,12 @@ const triCarousel = {
             siteDesc: `A Site built for the Calvary United Methodist Church. The site includes a masonry-style photo gallery, a landing page, an about section for the pastor, church schedules, and a daily bible verse powered by an API. The site's backend is PHP, Animations are done with GSAP, and the bible verse API is OurManna.`
         },
         {
-            title: "GrowInCode Blog",
+            title: "WB WebDev",
             subtitle: "subtitle",
             image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
-            link: "https://growincode-frontend.pages.dev",
+            link: "https://wbwebdev.com",
             demo: false,
-            siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare to get caching.`
+            siteDesc: `The website created for my business. Created with Vite, React and hosted on cloudfare pages`
         },
         {
             title: "Cartersville Outreach International",
@@ -108,6 +108,14 @@ const triCarousel = {
             link: "https://wbojczuk.github.io/TSRuntimeTypeChecker/",
             demo: "https://github.com/wbojczuk/TSRuntimeTypeChecker",
             siteDesc: `TypeScript is great for Compile-Time Type Checking, but what about type checking dynamic data during Run-Time that could potentially be wrong? That's why I created this tool, and it does it's job well. RuntimeTypeChecker Supports primitive types, complex types like Arrays, Tuples, and Objects. It also supports templates to check complex types against.`
+        },
+        {
+            title: "GrowInCode Blog",
+            subtitle: "subtitle",
+            image: `./img/carousel_images/bg${randInt(1,3)}.jpg`,
+            link: "https://growincode-frontend.pages.dev",
+            demo: false,
+            siteDesc: `This is a fully functional blog that I've built from the ground up. It used React, react-router-dom, and GSAP on the frontend. It then uses NodeJS, ExpressJS, and MongoDB as the backend. The frontend is hosted on cloudfare to get caching.`
         },
         {
             title: "DNBBGCM",
