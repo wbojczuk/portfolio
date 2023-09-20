@@ -1,0 +1,173 @@
+#projectsWrapper{
+    padding-top: 10vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.project{
+    display: inline-block;
+    position: relative;
+    width: 24%;
+    padding: 1vw 2%;
+    margin: 1vw 2.5%;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.3);
+    padding-bottom: 5vw;
+}
+
+.project-img{
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+.project-title{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6vw;
+    margin: 1vw 0 0.5vw 0;
+    text-align: left;
+}
+
+.project-desc{
+    font-size: 1vw;
+    line-height: 130%;
+}
+
+.project-icons-wrapper{
+    margin: 1vw 0;
+}
+
+iconify-icon{
+    margin: 0 0.2vw;
+   font-size: 2vw;
+}
+
+.project-buttons-wrapper{
+    position: absolute;
+    bottom: 1vw;
+    left:2%;
+}
+
+.project-button{
+    display: inline-block;
+    position: relative;
+    background-color: #524B7F;
+    color: white;
+    text-decoration: none;
+    padding: 0.6vw 2vw;
+    border-radius: 10px;
+    margin: 0 0.2vw;
+    font-size: 1vw;
+    transition: 0.3s background-color;
+}
+.project-button:hover{
+    background-color: #6e65a7;
+    text-decoration: underline;
+}
+
+.project-code-button{
+    background-color: #E9AB67;
+}
+
+.project-code-button:hover{
+    background-color: #c79259;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #projectsWrapper{
+        padding-top: 10vw;
+        width: 85%;
+        margin-left: 5%;
+    }
+    
+    .project{
+        width: 34%;
+        padding: 2vw 2%;
+        margin: 2vw 6%;
+        padding-bottom: 6vw;
+    }
+    
+    .project-title{
+        font-size:2.2vw;
+        margin: 1.5vw 0 0.5vw 0;
+    }
+    
+    .project-desc{
+        font-size: 1.4vw;
+        line-height: 130%;
+    }
+    
+    .project-icons-wrapper{
+        margin: 1.5vw 0;
+    }
+    
+    iconify-icon{
+        margin: 0 0.5vw;
+       font-size: 3vw;
+    }
+    
+    .project-buttons-wrapper{
+        position: absolute;
+        bottom: 1.5vw;
+        left:5%;
+    }
+    
+    .project-button{
+        padding: 1vw 3vw;
+        border-radius: 8px;
+        margin: 0 0.2vw;
+        font-size: 1.5vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #projectsWrapper{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    
+    .project{
+        width: 40%;
+        padding: 2vw 3%;
+        margin: 2vw 2%;
+        padding-bottom: 8vw;
+    }
+    
+    .project-title{
+        font-size:3.5vw;
+        margin: 1.5vw 0 0.5vw 0;
+    }
+    
+    .project-desc{
+        font-size: 2.5vw;
+        line-height: 130%;
+    }
+    
+    .project-icons-wrapper{
+        margin: 1.5vw 0;
+    }
+    
+    iconify-icon{
+        margin: 0 0.8vw;
+       font-size: 5vw;
+    }
+    
+    .project-buttons-wrapper{
+        position: absolute;
+        bottom: 1.5vw;
+        left:5%;
+    }
+    
+    .project-button{
+        padding: 1.3vw 4vw;
+        border-radius: 8px;
+        margin: 0 0.2vw;
+        font-size: 2.2vw;
+    }
+}

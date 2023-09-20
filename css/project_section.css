@@ -1,7 +1,8 @@
 
 #projectSection{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 10vw;
     width: 100vw;
     background-color: #368cc2;
     z-index: 910;
@@ -22,7 +23,7 @@
     position: relative;
     opacity: 0;
 }
-.project-title{
+.projects-title{
     height: 25%;
     width: 100%;
     text-align: center;
@@ -141,7 +142,7 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 900px) {
-    .project-title{
+    .projects-title{
         font-size: 6vh;
     }
    .space-between-60{

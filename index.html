@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./css/weather.css">
     <link rel="stylesheet" href="./css/hiring_section.css">
     <link rel="stylesheet" href="./css/contact_section.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
@@ -23,7 +26,8 @@
     <script src="./js/textstorm.js" defer></script>
     <script src="./js/datetopbar.js" defer></script>
     <script src="./js/hangingelems.js" defer></script>
-    <script src="./js/carousel.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="./js/portfolio.js" defer></script>
     <script src="./js/stats.js" defer></script>
     <script src="js/weather.js" defer></script>
     <!-- Google tag (gtag.js) -->
@@ -182,78 +186,11 @@
     <section id="projectSection">
         <div id="aboutWave"></div>
         <h2 style="display: none;">placeholder</h2>
-        <div class="project-title"><span data-initialstate="true" id="projectTitle">Projects</span></div>
+        <div class="projects-title"><span data-initialstate="true" id="projectTitle">Projects</span></div>
 
-        <div class="space-between-60">
-            <div id="triCarousel"></div>
-
-            <div id="projectAbout">
-                <div id="projectAboutTitle">JsDevTools</div>
-                <div id="projectAboutText">So yes</div>
-                <a href="#" target="_blank" id="projectAboutDemo">C<br>O<br>D<br>E</a>
-            </div>
-
-        </div>
-        <div id="carouselStyleSwitch">
-            <div class="hover-effect-title">Hover Effect</div>
-                <div class="hover-effect-container">
-                    <input class="effect-options" checked="checked" value="slide-down" type="radio" name="hovereffect" id="slideDown"> <label for="slideDown">slide-down</label>
-                </div>
-                <div class="hover-effect-container">
-                    <input class="effect-options" value="slide-up" type="radio" name="hovereffect" id="slideUp"> <label for="slideUp">slide-up</label>
-                </div>
-                <div class="hover-effect-container">
-                    <input class="effect-options" value="peek" type="radio" name="hovereffect" id="peek"> <label for="peek">peek</label>
-                </div>
-                <div class="hover-effect-container">
-                    <input class="effect-options" value="none" type="radio" name="hovereffect" id="noneEffect"> <label for="noneEffect">none</label>
-                </div>
-        </div>
+        <div id="projectsWrapper"></div>
         <a href="#message" class="down-arrow" id="hiringArrow" title="Contact Me"></a>
-        <!-- <a href="#hiringSection" class="down-arrow" id="hiringArrow" title="Hire Me"></a> -->
     </section>
-    <!-- <section id="hiringSection">
-        <div id="hiringWave"></div>
-    <div class="center">
-        <h2 id="hiringTitle">Hire Me</h2>
-    </div>
-    <p id="hiringDescription">
-        If you need a website, I can make you one, and will stay in communication with you to get you exactly what you want. Prices are gauged based on the time it will take me to complete a project. <br><br> A Flat Fee is a one time payment that includes the site's Design and Development but does not include hosting or domain registration, these can be requested for an additional fee depending on the hosting requirements of your site. <br><br> A Subscription is a monthly payment that includes website design and development, as well as hosting, domain registration, maintenance, and revisions. <br><br> Special requests are accepted (as long as I can accommodate them). Please do not hesitate to contact me with any questions or concerns.
-    </p>
-    <div class="center">
-        <a href="mailto:williambojczuk@gmail.com" class="hiring-icon"></a>
-        <a target="_blank" href="https://www.instagram.com/wbojczukdev/" class="hiring-icon"></a>
-    </div>
-    <div id="hiringCardContainer">
-        <div class="hiringCard static_site">
-            <div class="title">Static Site</div>
-            <div class="description">
-                Any site that does not rely on generated content. Perfect for an informative site like a portfolio, landing page, or something similar.
-            </div>
-            
-            <div class="price"><strong>Flat Fee:</strong> Contact me for pricing</div>
-
-            <div class="price"><strong>Subscription:</strong> Contact me for pricing</div>
-            <div class="subscription-container"></div>
-
-        </div>
-        <div class="hiringCard dynamic_site">
-            <div class="title">Dymanic Site</div>
-            <div class="description">
-                A site that can store content, retrieve it, and display pages based on external material. Perfect for a Blog or something similar.
-            </div>
-            <div class="price"><strong>Flat Fee:</strong> Contact me for pricing</div>
-
-            <div class="price"><strong>Subscription:</strong> Contact me for pricing</div>
-
-            <div class="subscription-container">
-
-            </div>
-        </div>
-    </div>
-    
-    <a href="#contactSection" class="down-arrow" id="hiringArrow" title="Contact Me"></a>
-    </section> -->
     <section id="contactSection">
         <div id="contactWave"></div>
 
