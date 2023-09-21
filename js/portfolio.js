@@ -7,15 +7,15 @@ const portfolioData = [
         siteUrl: "https://cartersvilleoutreachinternational.org",
         codeUrl: false,
         stack: ["typescript", "nextjs", "css3", "mongodb"],
-        desc: `Website created for non-profit evangelical ministry. Created with NextJS, TypeScript, MongoDB, KindeAuth, among other technologies.`
+        desc: `Website created for non-profit evangelical ministry based in Cartersville Georgia. Complete with a fully-fledged blogging system, event planner, and other dynamic data. Dynamic data can be managed through an admin panel. Created with NextJS, TypeScript, MongoDB, KindeAuth, among other technologies.`
     },
     {
         title: "WB WebDev",
         imageSrc: `https://i.imgur.com/PKOffo6.png`,
         siteUrl: "https://wbwebdev.com",
         codeUrl: false,
-        stack: ["typescript", "react", "vitejs"],
-        desc: `The website created for my business. Created with Vite, React and hosted on cloudfare pages`
+        stack: ["typescript", "react", "vitejs", "css3"],
+        desc: `The website created for my website development agency. Includes a contact form that is powered by FormSubmit.io, past work display, lottie animations, review carousel + more. Created with Vite, React and hosted on cloudfare pages`
     },
     {
         title: "Runtime Type Checker",
